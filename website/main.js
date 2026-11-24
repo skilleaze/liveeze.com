@@ -121,6 +121,9 @@
     header.classList.remove('open'); menuBtn.setAttribute('aria-expanded', false); document.body.style.overflow = '';
   }));
 
+  const setHdr = () => root.style.setProperty('--hdr', (header.classList.contains('scrolled') ? header.offsetHeight : 72) + 'px');
+  window.addEventListener('scroll', setHdr, { passive: true }); window.addEventListener('resize', setHdr); setHdr();
+
   /* Reveal on scroll */
   const io = new IntersectionObserver(entries => entries.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
@@ -177,7 +180,7 @@
 
   /* Hero pointer depth: image, dust and text move on separate planes */
   const heroInner = document.querySelector('.hero-inner');
-  if (!reduce) {
+  if (!reduce && heroEl && hero) {
     if (fine) {
       heroEl.addEventListener('pointermove', e => {
         mouseX = e.clientX / window.innerWidth - .5; mouseY = e.clientY / window.innerHeight - .5;
@@ -213,7 +216,7 @@
   /* =====================================================
      SCROLL-DRIVEN SCENES
      ===================================================== */
-  const navLinks = [...document.querySelectorAll('.nav a:not(.nav-cta)')];
+  const navLinks = [...document.querySelectorAll('.nav a:not(.nav-cta)')].filter(a => a.getAttribute('href').startsWith('#'));
   const sections = navLinks.map(a => document.querySelector(a.getAttribute('href')));
 
   const process = document.querySelector('.process');
@@ -251,7 +254,7 @@
     const y = window.scrollY, vh = window.innerHeight;
     header.classList.toggle('scrolled', y > 40);
 
-    if (!reduce && y < vh) heroMedia.style.transform = `translate3d(0, ${y * 0.25}px, 0)`;
+    if (!reduce && heroMedia && y < vh) heroMedia.style.transform = `translate3d(0, ${y * 0.25}px, 0)`;
 
     if (words.length) {
       const r = statement.getBoundingClientRect();
@@ -337,8 +340,8 @@
 
   /* Contact form: compose an email to the studio */
   const form = document.querySelector('.contact-form');
-  const status = form.querySelector('.form-status');
-  form.addEventListener('submit', e => {
+  const status = form && form.querySelector('.form-status');
+  if (form) form.addEventListener('submit', e => {
     e.preventDefault();
     const name = form.name.value.trim(), email = form.email.value.trim();
     const okEmail = /^\S+@\S+\.\S+$/.test(email);
@@ -355,6 +358,86 @@
     window.location.href = `mailto:info@liveeze.com?subject=${encodeURIComponent('Project enquiry: ' + type)}&body=${encodeURIComponent(body)}`;
     status.textContent = 'Your email app should open with the enquiry ready to send. If it does not, write to info@liveeze.com.';
   });
+
+
+  /* =====================================================
+     PORTFOLIO: filters + lightbox
+     ===================================================== */
+  const chips = [...document.querySelectorAll('.pf-chip')];
+  const sets = [...document.querySelectorAll('.pf-set')];
+  function applyFilter(cat, scroll) {
+    chips.forEach(c => { const on = c.dataset.filter === cat; c.classList.toggle('is-on', on); c.setAttribute('aria-pressed', on); });
+    sets.forEach(s => { s.hidden = !(cat === 'all' || s.dataset.cat === cat); });
+    sets.forEach(s => s.querySelectorAll('.reveal').forEach(el => { if (!s.hidden) io.observe(el); }));
+    const chip = chips.find(c => c.dataset.filter === cat);
+    if (chip) chip.scrollIntoView({ block: 'nearest', inline: 'center', behavior: reduce ? 'auto' : 'smooth' });
+    if (scroll) {
+      const bar = document.querySelector('.pf-filter'), first = sets.find(s => !s.hidden);
+      const top = first.getBoundingClientRect().top + scrollY - bar.offsetHeight - 76 + parseFloat(getComputedStyle(first).paddingTop) - 32;
+      window.scrollTo({ top, behavior: reduce ? 'auto' : 'smooth' });
+    }
+  }
+  if (chips.length) {
+    chips.forEach(c => c.addEventListener('click', () => {
+      const cat = c.dataset.filter;
+      history.replaceState(null, '', cat === 'all' ? location.pathname : '#' + cat);
+      applyFilter(cat, true);
+    }));
+    const initial = location.hash.slice(1);
+    if (initial && sets.some(s => s.dataset.cat === initial)) applyFilter(initial, false);
+    window.addEventListener('hashchange', () => { const h = location.hash.slice(1); if (sets.some(s => s.dataset.cat === h)) applyFilter(h, true); });
+  }
+
+  const lb = document.querySelector('.lightbox');
+  if (lb) {
+    const img = lb.querySelector('.lb-img'), cap = lb.querySelector('.lb-cap'), count = lb.querySelector('.lb-count');
+    let list = [], pos = 0, lastFocus = null;
+    const visible = () => [...document.querySelectorAll('.pf-open')].filter(b => !b.closest('.pf-set').hidden);
+    function show(i) {
+      pos = (i + list.length) % list.length;
+      const b = list[pos];
+      lb.classList.add('loading');
+      img.onload = () => lb.classList.remove('loading');
+      img.src = b.dataset.full; img.alt = b.querySelector('img').alt;
+      cap.textContent = b.dataset.caption;
+      count.textContent = `${String(pos + 1).padStart(2, '0')} / ${String(list.length).padStart(2, '0')}`;
+      const next = list[(pos + 1) % list.length]; if (next) { const pre = new Image(); pre.src = next.dataset.full; }
+    }
+    function open(btn) {
+      list = visible(); lastFocus = btn;
+      lb.hidden = false; document.body.style.overflow = 'hidden';
+      requestAnimationFrame(() => lb.classList.add('open'));
+      show(list.indexOf(btn)); Sound.whoosh();
+      lb.querySelector('.lb-close').focus();
+    }
+    function close() {
+      lb.classList.remove('open'); document.body.style.overflow = '';
+      setTimeout(() => { lb.hidden = true; img.removeAttribute('src'); }, 400);
+      if (lastFocus) lastFocus.focus();
+    }
+    document.addEventListener('click', e => { const b = e.target.closest('.pf-open'); if (b) open(b); });
+    lb.querySelector('.lb-prev').addEventListener('click', () => { show(pos - 1); Sound.hover(); });
+    lb.querySelector('.lb-next').addEventListener('click', () => { show(pos + 1); Sound.hover(); });
+    lb.querySelector('.lb-close').addEventListener('click', close);
+    lb.addEventListener('click', e => { if (e.target === lb || e.target.classList.contains('lb-stage')) close(); });
+    document.addEventListener('keydown', e => {
+      if (lb.hidden) return;
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowRight') show(pos + 1);
+      if (e.key === 'ArrowLeft') show(pos - 1);
+      if (e.key === 'Tab') {
+        const f = [...lb.querySelectorAll('button')]; const i = f.indexOf(document.activeElement);
+        e.preventDefault(); f[(i + (e.shiftKey ? -1 : 1) + f.length) % f.length].focus();
+      }
+    });
+    let sx = null;
+    lb.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive: true });
+    lb.addEventListener('touchend', e => { if (sx === null) return; const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 50) show(pos + (dx < 0 ? 1 : -1)); sx = null; });
+  }
+
+  /* Portfolio hero parallax */
+  const pfMedia = document.querySelector('.pf-hero-media');
+  if (pfMedia && !reduce) window.addEventListener('scroll', () => { if (scrollY < innerHeight) pfMedia.style.transform = `translate3d(0, ${scrollY * 0.3}px, 0)`; }, { passive: true });
 
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
