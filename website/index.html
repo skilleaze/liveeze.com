@@ -4,17 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LIVEEZE — Interior Architecture, Design &amp; Build</title>
-<meta name="description" content="LIVEEZE is a full-service design and build studio for residential and commercial spaces. Interior architecture, 3D visualisation, furniture, lighting, materials, landscape, contracting and turnkey delivery.">
+<meta name="description" content="LIVEEZE is a full-service design and build studio for residential and commercial spaces. Interior architecture, 3D visualisation, furniture, lighting, materials, landscape, contracting and turnkey delivery, under one roof.">
+<meta name="theme-color" content="#282822">
 <meta property="og:title" content="LIVEEZE — Live exquisitely.">
-<meta property="og:description" content="One studio from first sketch to final key.">
-<meta property="og:image" content="assets/images/hero-staircase.jpg">
+<meta property="og:description" content="Interior architecture, design and build, under one roof. One studio from first sketch to final key.">
+<meta property="og:image" content="https://www.liveeze.com/assets/images/hero-staircase.jpg">
+<meta property="og:url" content="https://www.liveeze.com">
 <link rel="icon" type="image/png" href="assets/logo/monogram-charcoal.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600&display=swap">
+<link rel="preload" as="image" href="assets/images/hero-staircase.jpg">
 <link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+
+<div class="loader" aria-hidden="true">
+  <img src="assets/logo/monogram-ivory.png" alt="">
+  <span class="loader-line"></span>
+</div>
 
 <header class="site-header" id="top">
   <a href="#top" class="brand" aria-label="LIVEEZE home">
@@ -22,73 +31,166 @@
     <img class="brand-dark" src="assets/logo/wordmark-charcoal.png" alt="" aria-hidden="true">
   </a>
   <nav class="nav" aria-label="Main">
-    <a href="#studio">Studio</a>
     <a href="#services">Services</a>
-    <a href="#approach">Approach</a>
+    <a href="#process">Process</a>
+    <a href="#spaces">Spaces</a>
+    <a href="#studio">Studio</a>
     <a href="#contact" class="nav-cta">Start a project</a>
   </nav>
   <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
 </header>
 
+<main>
+
+<!-- HERO -->
 <section class="hero">
-  <img class="hero-img" src="assets/images/hero-staircase.jpg" alt="Forest green staircase in a light-filled interior">
+  <div class="hero-media">
+    <img class="hero-img" src="assets/images/hero-staircase.jpg" alt="A curved forest-green staircase lit by a skylight">
+  </div>
   <div class="hero-shade"></div>
   <div class="hero-inner">
-    <img class="hero-mono" src="assets/logo/monogram-ivory.png" alt="">
-    <h1 class="hero-title">Interior architecture, design and build, under one roof.</h1>
-    <p class="tagline tagline-light">LIVE EXQUISITELY.</p>
-    <a href="#contact" class="btn btn-light">Start a project</a>
+    <p class="eyebrow eyebrow-light reveal">Interior architecture · Design · Build</p>
+    <h1 class="hero-title">
+      <span class="line"><span>Spaces designed</span></span>
+      <span class="line"><span>and built,</span></span>
+      <span class="line"><span><em>under one roof.</em></span></span>
+    </h1>
+    <p class="hero-lead reveal">One studio carries your home or workplace from the first sketch to the final key, for residential and commercial clients.</p>
+    <div class="hero-actions reveal">
+      <a href="#contact" class="btn btn-light">Start a project</a>
+      <a href="#process" class="btn btn-ghost-light">See how we work</a>
+    </div>
+  </div>
+  <p class="tagline tagline-light hero-tag">LIVE EXQUISITELY.</p>
+  <a href="#intro" class="scroll-cue" aria-label="Scroll to the next section"><span></span></a>
+</section>
+
+<!-- INTRO STATEMENT -->
+<section class="intro" id="intro">
+  <p class="eyebrow">The idea</p>
+  <p class="statement" data-words>Most projects need an architect, a designer, a contractor and a dozen suppliers. LIVEEZE is all of them: one team and one point of responsibility, from first sketch to final key.</p>
+  <div class="intro-pillars">
+    <div class="pillar reveal"><span class="pillar-k">One</span><p>conversation, with a single team that knows every detail of your project.</p></div>
+    <div class="pillar reveal"><span class="pillar-k">One</span><p>vision, carried intact from concept drawings to the finished room.</p></div>
+    <div class="pillar reveal"><span class="pillar-k">One</span><p>handover. You receive a finished, furnished space, ready to live in.</p></div>
   </div>
 </section>
 
-<section class="section story" id="studio">
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-head">
+    <p class="eyebrow">What we do</p>
+    <h2 class="h2">Every discipline a space needs.</h2>
+    <p class="body">Choose one service or let us take the whole journey. Each stage is handled in-house, so nothing is lost between hands.</p>
+  </div>
+  <div class="service-grid">
+    <article class="service-card tilt reveal">
+      <div class="service-img"><img src="assets/images/ivory-architecture.jpg" alt="Curved ivory plaster wall with a travertine bench" loading="lazy"></div>
+      <div class="service-body">
+        <span class="service-n">Design</span>
+        <h3>Shape the vision</h3>
+        <ul>
+          <li>Interior architecture</li>
+          <li>Exterior &amp; interior 3D visualisation</li>
+          <li>Furniture layout</li>
+          <li>Lighting design</li>
+          <li>Material selection</li>
+        </ul>
+      </div>
+    </article>
+    <article class="service-card tilt reveal">
+      <div class="service-img"><img src="assets/images/natural-materials.jpg" alt="Travertine, green marble, dark oak and linen samples" loading="lazy"></div>
+      <div class="service-body">
+        <span class="service-n">Build</span>
+        <h3>Make it real</h3>
+        <ul>
+          <li>Contracting</li>
+          <li>Furniture design &amp; development</li>
+          <li>Landscape planning</li>
+        </ul>
+      </div>
+    </article>
+    <article class="service-card tilt reveal">
+      <div class="service-img"><img src="assets/images/courtyard-living.jpg" alt="Finished courtyard living room in warm evening light" loading="lazy"></div>
+      <div class="service-body">
+        <span class="service-n">Deliver</span>
+        <h3>Hand over the key</h3>
+        <ul>
+          <li>Consulting</li>
+          <li>Turnkey solutions</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- PROCESS: 3D EXPLODED STACK -->
+<section class="process" id="process">
+  <div class="process-sticky">
+    <div class="process-text">
+      <p class="eyebrow eyebrow-light">How it works</p>
+      <h2 class="h2 h2-light">Four layers, one team.</h2>
+      <ol class="steps">
+        <li class="step is-active" data-step="0"><span class="step-n">01</span><div><h3>Concept</h3><p>We listen to how you live and work, then shape the brief and the vision.</p></div></li>
+        <li class="step" data-step="1"><span class="step-n">02</span><div><h3>Design</h3><p>Plans, 3D visualisation, furniture, lighting and materials, resolved in detail.</p></div></li>
+        <li class="step" data-step="2"><span class="step-n">03</span><div><h3>Build</h3><p>Our contracting team executes the design, with one point of responsibility.</p></div></li>
+        <li class="step" data-step="3"><span class="step-n">04</span><div><h3>Handover</h3><p>A finished, furnished space, ready to live or work in.</p></div></li>
+      </ol>
+      <div class="process-bar"><span></span></div>
+    </div>
+    <div class="stack-scene" aria-hidden="true">
+      <div class="stack">
+        <div class="slab slab-0" style="--i:0"><div class="face face-plan"><span class="slab-label">01 Concept</span></div></div>
+        <div class="slab slab-1" style="--i:1"><div class="face face-img" style="background-image:url(assets/images/natural-materials.jpg)"><span class="slab-label">02 Design</span></div></div>
+        <div class="slab slab-2" style="--i:2"><div class="face face-grid"><span class="slab-label">03 Build</span></div></div>
+        <div class="slab slab-3" style="--i:3"><div class="face face-img" style="background-image:url(assets/images/courtyard-living.jpg)"><span class="slab-label">04 Handover</span></div></div>
+      </div>
+      <p class="stack-hint">Scroll to move through the layers</p>
+    </div>
+  </div>
+</section>
+
+<!-- SPACES GALLERY -->
+<section class="spaces" id="spaces">
+  <div class="section-head section-head-row">
+    <div>
+      <p class="eyebrow">Spaces</p>
+      <h2 class="h2">Atmosphere, in detail.</h2>
+    </div>
+    <div class="gallery-nav">
+      <button class="gal-btn" data-dir="-1" aria-label="Previous image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg></button>
+      <button class="gal-btn" data-dir="1" aria-label="Next image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+    </div>
+  </div>
+  <div class="gallery" tabindex="0" aria-label="Gallery of spaces">
+    <figure class="slide"><img src="assets/images/courtyard-living.jpg" alt="Living room opening onto an olive-tree courtyard" loading="lazy"><figcaption><span>Residential</span>Courtyard living</figcaption></figure>
+    <figure class="slide"><img src="assets/images/hero-staircase.jpg" alt="Sculpted staircase in forest-green plaster" loading="lazy"><figcaption><span>Interior architecture</span>The sculpted stair</figcaption></figure>
+    <figure class="slide"><img src="assets/images/ivory-architecture.jpg" alt="Ivory plaster walls and travertine paving in sunlight" loading="lazy"><figcaption><span>Exterior</span>Light and stone</figcaption></figure>
+    <figure class="slide"><img src="assets/images/natural-materials.jpg" alt="Hand-selected natural materials" loading="lazy"><figcaption><span>Material selection</span>Travertine, marble, oak, linen</figcaption></figure>
+    <figure class="slide"><img src="assets/images/misty-forest.jpg" alt="Misty forest" loading="lazy"><figcaption><span>Landscape</span>Rooted in nature</figcaption></figure>
+  </div>
+  <p class="gallery-note">Mood imagery showing the LIVEEZE design direction.</p>
+</section>
+
+<!-- STORY -->
+<section class="story" id="studio">
+  <div class="story-media tilt reveal">
+    <img src="assets/images/ivory-architecture.jpg" alt="Sunlit courtyard entrance with an olive tree" loading="lazy">
+    <img class="story-mono" src="assets/logo/monogram-beige.png" alt="">
+  </div>
   <div class="story-text">
     <p class="eyebrow">Our story</p>
     <h2 class="h2">A beautiful space should never be hard to live in, or hard to create.</h2>
     <span class="rule"></span>
-    <p class="body">Most clients who set out to build a home or a workplace end up managing a crowd: an architect, a designer, a contractor, a lighting specialist, a dozen suppliers. The vision gets diluted between them.</p>
-    <p class="body">LIVEEZE brings every discipline under one roof, so a single team carries each idea from the first sketch to the final key. You keep the joy of creating a space. We carry the complexity.</p>
+    <p class="body">The name says it. <strong>LIVE</strong> is how people live and work in a space. <strong>EZE</strong> is ease: an effortless space and an effortless process. The double E stands for Elegance and Ease.</p>
+    <p class="body">Our monogram tells the same story: the upright is architecture and permanence, the swash is design and comfort, and the taper runs from structure to the finest detail.</p>
+    <p class="quote">You keep the joy of creating a space. We carry the complexity.</p>
   </div>
-  <div class="story-img"><img src="assets/images/courtyard-living.jpg" alt="Courtyard living room with natural light" loading="lazy"></div>
 </section>
 
-<section class="section services" id="services">
-  <div class="services-head">
-    <p class="eyebrow">Services</p>
-    <h2 class="h2">One studio. Every stage.</h2>
-  </div>
-  <div class="services-grid">
-    <div class="service-col">
-      <h3 class="col-title"><span>01</span>Design</h3>
-      <ul>
-        <li>Interior architecture</li>
-        <li>Exterior &amp; interior 3D visualisation</li>
-        <li>Furniture layout</li>
-        <li>Lighting design</li>
-        <li>Material selection</li>
-      </ul>
-    </div>
-    <div class="service-col">
-      <h3 class="col-title"><span>02</span>Build</h3>
-      <ul>
-        <li>Contracting</li>
-        <li>Furniture design &amp; development</li>
-        <li>Landscape planning</li>
-      </ul>
-    </div>
-    <div class="service-col">
-      <h3 class="col-title"><span>03</span>Deliver</h3>
-      <ul>
-        <li>Consulting</li>
-        <li>Turnkey solutions</li>
-      </ul>
-    </div>
-  </div>
-  <p class="services-foot">For residential and commercial spaces.</p>
-</section>
-
+<!-- TAGLINE BAND -->
 <section class="band">
-  <img src="assets/images/misty-forest.jpg" alt="" loading="lazy">
+  <div class="band-media"><img src="assets/images/misty-forest.jpg" alt="" loading="lazy"></div>
   <div class="band-shade"></div>
   <div class="band-inner">
     <p class="tagline tagline-light tagline-lg">LIVE EXQUISITELY.</p>
@@ -96,63 +198,47 @@
   </div>
 </section>
 
-<section class="section approach" id="approach">
-  <div class="approach-img"><img src="assets/images/natural-materials.jpg" alt="Natural material samples: stone, timber and linen" loading="lazy"></div>
-  <div class="approach-text">
-    <p class="eyebrow">Approach</p>
-    <h2 class="h2">From first sketch to final key.</h2>
-    <ol class="steps">
-      <li><span>01</span><div><h3>Concept</h3><p>We listen to how you live and work, then shape the brief and the vision.</p></div></li>
-      <li><span>02</span><div><h3>Design</h3><p>Plans, 3D visualisation, furniture, lighting and materials, resolved in detail.</p></div></li>
-      <li><span>03</span><div><h3>Build</h3><p>Our contracting team executes the design, with one point of responsibility.</p></div></li>
-      <li><span>04</span><div><h3>Handover</h3><p>A finished, furnished space, ready to live or work in.</p></div></li>
-    </ol>
-  </div>
-</section>
-
+<!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="contact-text">
     <p class="eyebrow eyebrow-light">Contact</p>
     <h2 class="h2 h2-light">Begin your space.</h2>
-    <p class="body body-light">Tell us about your project and we will be in touch to arrange a consultation.</p>
-    <a class="contact-mail" href="mailto:info@liveeze.com">info@liveeze.com</a>
+    <p class="body body-light">Tell us about your project. We will reply to arrange a first consultation, where we listen before we draw.</p>
+    <ul class="contact-list">
+      <li><span>Email</span><a href="mailto:info@liveeze.com">info@liveeze.com</a></li>
+      <li><span>Projects</span>Residential and commercial</li>
+    </ul>
   </div>
-  <form class="contact-form" action="mailto:info@liveeze.com" method="post" enctype="text/plain">
-    <label>Name<input type="text" name="name" required></label>
-    <label>Email<input type="email" name="email" required></label>
-    <label>Project type
-      <select name="type">
-        <option>Residential</option>
-        <option>Commercial</option>
-        <option>Landscape</option>
-        <option>Consultation</option>
-      </select>
-    </label>
-    <label>Message<textarea name="message" rows="4"></textarea></label>
+  <form class="contact-form" novalidate>
+    <div class="field"><input type="text" id="f-name" name="name" required placeholder=" " autocomplete="name"><label for="f-name">Name</label></div>
+    <div class="field"><input type="email" id="f-email" name="email" required placeholder=" " autocomplete="email"><label for="f-email">Email</label></div>
+    <fieldset class="chips">
+      <legend>Project type</legend>
+      <label><input type="radio" name="type" value="Residential" checked><span>Residential</span></label>
+      <label><input type="radio" name="type" value="Commercial"><span>Commercial</span></label>
+      <label><input type="radio" name="type" value="Landscape"><span>Landscape</span></label>
+      <label><input type="radio" name="type" value="Consultation"><span>Consultation</span></label>
+    </fieldset>
+    <div class="field"><textarea id="f-msg" name="message" rows="4" placeholder=" "></textarea><label for="f-msg">Tell us about the space</label></div>
     <button type="submit" class="btn btn-light">Send enquiry</button>
+    <p class="form-status" role="status"></p>
   </form>
 </section>
+
+</main>
 
 <footer class="footer">
   <img class="footer-mono" src="assets/logo/monogram-charcoal.png" alt="LIVEEZE monogram">
   <p class="tagline">LIVE EXQUISITELY.</p>
+  <nav class="footer-nav" aria-label="Footer">
+    <a href="#services">Services</a><a href="#process">Process</a><a href="#spaces">Spaces</a><a href="#studio">Studio</a><a href="#contact">Contact</a>
+  </nav>
   <div class="footer-row">
     <span>© <span id="year">2026</span> LIVEEZE</span>
-    <a href="https://liveeze.com">liveeze.com</a>
+    <a href="https://www.liveeze.com">liveeze.com</a>
   </div>
 </footer>
 
-<script>
-  const header = document.querySelector('.site-header');
-  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
-  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
-  const btn = document.querySelector('.menu-btn');
-  btn.addEventListener('click', () => {
-    const open = header.classList.toggle('open');
-    btn.setAttribute('aria-expanded', open);
-  });
-  document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => { header.classList.remove('open'); btn.setAttribute('aria-expanded', false); }));
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+<script src="main.js" defer></script>
 </body>
 </html>
