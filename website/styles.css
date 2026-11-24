@@ -78,13 +78,13 @@ a:hover { color: var(--charcoal); }
 .scrolled .menu-btn span { background: var(--charcoal); }
 
 /* ---------- Hero ---------- */
-.hero { position: relative; height: 100svh; min-height: 620px; overflow: hidden; display: flex; align-items: flex-end; color: var(--ivory); background: var(--charcoal); }
+.hero { position: relative; min-height: max(100svh, 620px); padding-top: 130px; overflow: hidden; display: flex; align-items: flex-end; color: var(--ivory); background: var(--charcoal); }
 .hero-media { position: absolute; inset: -4%; will-change: transform; }
 .hero-img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.12); transition: transform 2.6s var(--ease); }
 .loaded .hero-img { transform: scale(1); }
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(40,40,34,.78) 0%, rgba(40,40,34,.35) 55%, rgba(40,40,34,.1) 100%), linear-gradient(0deg, rgba(40,40,34,.55), transparent 45%); }
-.hero-inner { position: relative; z-index: 2; padding: 0 var(--pad) clamp(96px, 14vh, 150px); max-width: 980px; }
-.hero-title { font-weight: 400; font-size: clamp(44px, 7.4vw, 112px); line-height: 1.02; margin: 0 0 32px; letter-spacing: -.015em; }
+.hero-inner { position: relative; z-index: 2; padding: 0 var(--pad) clamp(88px, 13vh, 150px); max-width: 980px; }
+.hero-title { font-weight: 400; font-size: clamp(42px, min(7.4vw, 10.5vh), 112px); line-height: 1.02; margin: 0 0 32px; letter-spacing: -.015em; }
 .hero-title .line { display: block; overflow: hidden; padding-bottom: .06em; }
 .hero-title .line > span { display: inline-block; }
 .js .hero-title .line > span { transform: translateY(105%); transition: transform 1.3s var(--ease); }
@@ -92,7 +92,7 @@ a:hover { color: var(--charcoal); }
 .loaded .hero-title .line:nth-child(2) > span { transition-delay: .12s; }
 .loaded .hero-title .line:nth-child(3) > span { transition-delay: .24s; }
 .hero-title em { font-style: italic; color: var(--sand); }
-.hero-lead { font-size: clamp(17px, 1.5vw, 21px); line-height: 1.65; max-width: 520px; margin: 0 0 40px; color: var(--sand); }
+.hero-lead { font-size: clamp(17px, 1.5vw, 21px); line-height: 1.65; max-width: 520px; margin: 0 0 clamp(28px, 4.5vh, 40px); color: var(--sand); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 20px 36px; align-items: center; }
 .hero-tag { position: absolute; z-index: 2; right: var(--pad); bottom: clamp(40px, 6vh, 64px); writing-mode: vertical-rl; padding: .6em 0 0; }
 .scroll-cue { position: absolute; z-index: 2; left: 50%; bottom: 28px; width: 1px; height: 56px; background: rgba(251,249,244,.25); overflow: hidden; }
