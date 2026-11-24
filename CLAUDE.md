@@ -5,6 +5,7 @@ Follow these rules for every design, page, document or asset made for LIVEEZE.
 ## Workflow
 - The live site is `website/` (plain HTML + CSS, no build step). Vercel serves `website/` as configured in `vercel.json`.
 - Every push to `main` deploys automatically to liveeze.com via Vercel's GitHub integration.
+- GitHub repo: skilleaze/liveeze.com · Vercel project: liveeze.com (team skilleazecom-3109) · Domain DNS at GoDaddy (A @ → 216.150.1.1, CNAME www → Vercel). liveeze.com redirects to www.liveeze.com.
 
 ## Business
 LIVEEZE is a full-service design and build studio for residential and commercial spaces. Services: interior architecture, exterior & interior 3D visualisation, furniture layout, furniture design & development, lighting design, material selection, landscape planning, contracting, consulting, turnkey solutions. One team from first sketch to final key.
