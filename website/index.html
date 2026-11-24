@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LIVEEZE — Interior Architecture, Design &amp; Build</title>
+<title>LIVEEZE · Interior Architecture, Design &amp; Build</title>
 <meta name="description" content="LIVEEZE is a full-service design and build studio for residential and commercial spaces. Interior architecture, 3D visualisation, furniture, lighting, materials, landscape, contracting and turnkey delivery, under one roof.">
 <meta name="theme-color" content="#282822">
-<meta property="og:title" content="LIVEEZE — Live exquisitely.">
+<meta property="og:title" content="LIVEEZE · Live exquisitely.">
 <meta property="og:description" content="Interior architecture, design and build, under one roof. One studio from first sketch to final key.">
 <meta property="og:image" content="https://www.liveeze.com/assets/images/hero-staircase.jpg">
 <meta property="og:url" content="https://www.liveeze.com">
@@ -25,6 +25,8 @@
   <span class="loader-line"></span>
 </div>
 
+<div class="cursor" aria-hidden="true"><span class="cursor-ring"></span><span class="cursor-dot"></span></div>
+
 <header class="site-header" id="top">
   <a href="#top" class="brand" aria-label="LIVEEZE home">
     <img class="brand-light" src="assets/logo/wordmark-ivory.png" alt="LIVEEZE">
@@ -37,7 +39,13 @@
     <a href="#studio">Studio</a>
     <a href="#contact" class="nav-cta">Start a project</a>
   </nav>
-  <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  <div class="header-tools">
+    <button class="sound-btn" aria-pressed="false" aria-label="Turn sound on">
+      <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="sound-label">Sound</span>
+    </button>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
 </header>
 
 <main>
@@ -47,6 +55,7 @@
   <div class="hero-media">
     <img class="hero-img" src="assets/images/hero-staircase.jpg" alt="A curved forest-green staircase lit by a skylight">
   </div>
+  <canvas class="dust" aria-hidden="true"></canvas>
   <div class="hero-shade"></div>
   <div class="hero-inner">
     <p class="eyebrow eyebrow-light reveal">Interior architecture · Design · Build</p>
@@ -61,6 +70,7 @@
       <a href="#process" class="btn btn-ghost-light">See how we work</a>
     </div>
   </div>
+  <button class="sound-invite reveal" type="button"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Experience with sound</span></button>
   <p class="tagline tagline-light hero-tag">LIVE EXQUISITELY.</p>
   <a href="#intro" class="scroll-cue" aria-label="Scroll to the next section"><span></span></a>
 </section>
@@ -70,11 +80,19 @@
   <p class="eyebrow">The idea</p>
   <p class="statement" data-words>Most projects need an architect, a designer, a contractor and a dozen suppliers. LIVEEZE is all of them: one team and one point of responsibility, from first sketch to final key.</p>
   <div class="intro-pillars">
-    <div class="pillar reveal"><span class="pillar-k">One</span><p>conversation, with a single team that knows every detail of your project.</p></div>
-    <div class="pillar reveal"><span class="pillar-k">One</span><p>vision, carried intact from concept drawings to the finished room.</p></div>
-    <div class="pillar reveal"><span class="pillar-k">One</span><p>handover. You receive a finished, furnished space, ready to live in.</p></div>
+    <div class="pillar reveal"><span class="pillar-k">One conversation</span><p>A single team that knows every detail of your project.</p></div>
+    <div class="pillar reveal"><span class="pillar-k">One vision</span><p>Carried intact from concept drawings to the finished room.</p></div>
+    <div class="pillar reveal"><span class="pillar-k">One handover</span><p>You receive a finished, furnished space, ready to live in.</p></div>
   </div>
 </section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Interior architecture</span><b></b><span><em>3D visualisation</em></span><b></b><span>Furniture design</span><b></b><span><em>Lighting</em></span><b></b><span>Material selection</span><b></b><span><em>Landscape</em></span><b></b><span>Contracting</span><b></b><span><em>Turnkey</em></span><b></b>
+    <span>Interior architecture</span><b></b><span><em>3D visualisation</em></span><b></b><span>Furniture design</span><b></b><span><em>Lighting</em></span><b></b><span>Material selection</span><b></b><span><em>Landscape</em></span><b></b><span>Contracting</span><b></b><span><em>Turnkey</em></span><b></b>
+  </div>
+</div>
 
 <!-- SERVICES -->
 <section class="services" id="services">
@@ -85,7 +103,7 @@
   </div>
   <div class="service-grid">
     <article class="service-card tilt reveal">
-      <div class="service-img"><img src="assets/images/ivory-architecture.jpg" alt="Curved ivory plaster wall with a travertine bench" loading="lazy"></div>
+      <div class="service-img wipe"><img src="assets/images/ivory-architecture.jpg" alt="Curved ivory plaster wall with a travertine bench" loading="lazy"></div>
       <div class="service-body">
         <span class="service-n">Design</span>
         <h3>Shape the vision</h3>
@@ -99,7 +117,7 @@
       </div>
     </article>
     <article class="service-card tilt reveal">
-      <div class="service-img"><img src="assets/images/natural-materials.jpg" alt="Travertine, green marble, dark oak and linen samples" loading="lazy"></div>
+      <div class="service-img wipe"><img src="assets/images/natural-materials.jpg" alt="Travertine, green marble, dark oak and linen samples" loading="lazy"></div>
       <div class="service-body">
         <span class="service-n">Build</span>
         <h3>Make it real</h3>
@@ -111,7 +129,7 @@
       </div>
     </article>
     <article class="service-card tilt reveal">
-      <div class="service-img"><img src="assets/images/courtyard-living.jpg" alt="Finished courtyard living room in warm evening light" loading="lazy"></div>
+      <div class="service-img wipe"><img src="assets/images/courtyard-living.jpg" alt="Finished courtyard living room in warm evening light" loading="lazy"></div>
       <div class="service-body">
         <span class="service-n">Deliver</span>
         <h3>Hand over the key</h3>
@@ -145,43 +163,51 @@
         <div class="slab slab-2" style="--i:2"><div class="face face-grid"><span class="slab-label">03 Build</span></div></div>
         <div class="slab slab-3" style="--i:3"><div class="face face-img" style="background-image:url(assets/images/courtyard-living.jpg)"><span class="slab-label">04 Handover</span></div></div>
       </div>
-      <p class="stack-hint">Scroll to move through the layers</p>
     </div>
   </div>
 </section>
 
-<!-- SPACES GALLERY -->
-<section class="spaces" id="spaces">
-  <div class="section-head section-head-row">
-    <div>
-      <p class="eyebrow">Spaces</p>
-      <h2 class="h2">Atmosphere, in detail.</h2>
+<!-- SPACES: 3D WALK-THROUGH -->
+<section class="walk" id="spaces">
+  <div class="walk-sticky">
+    <div class="walk-head">
+      <p class="eyebrow eyebrow-light">Spaces</p>
+      <h2 class="h2 h2-light">Walk through the atmosphere.</h2>
     </div>
-    <div class="gallery-nav">
-      <button class="gal-btn" data-dir="-1" aria-label="Previous image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg></button>
-      <button class="gal-btn" data-dir="1" aria-label="Next image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+    <div class="walk-world" aria-hidden="true">
+      <div class="walk-floor"></div>
+      <div class="walk-ceil"></div>
+      <figure class="room" data-x="-1"><img src="assets/images/courtyard-living.jpg" alt=""><figcaption><span>Residential</span>Courtyard living</figcaption></figure>
+      <figure class="room" data-x="1"><img src="assets/images/hero-staircase.jpg" alt=""><figcaption><span>Interior architecture</span>The sculpted stair</figcaption></figure>
+      <figure class="room" data-x="-1"><img src="assets/images/ivory-architecture.jpg" alt=""><figcaption><span>Exterior</span>Light and stone</figcaption></figure>
+      <figure class="room" data-x="1"><img src="assets/images/natural-materials.jpg" alt=""><figcaption><span>Material selection</span>Travertine, marble, oak, linen</figcaption></figure>
+      <figure class="room" data-x="0"><img src="assets/images/misty-forest.jpg" alt=""><figcaption><span>Landscape</span>Rooted in nature</figcaption></figure>
+      <div class="room room-end" data-x="0"><img src="assets/logo/monogram-ivory.png" alt=""><p class="tagline tagline-light">LIVE EXQUISITELY.</p></div>
+    </div>
+    <div class="walk-ui">
+      <span class="walk-count"><b>01</b> / 05</span>
+      <span class="walk-bar"><i></i></span>
+      <span class="walk-note">Mood imagery showing the LIVEEZE design direction</span>
     </div>
   </div>
-  <div class="gallery" tabindex="0" aria-label="Gallery of spaces">
-    <figure class="slide"><img src="assets/images/courtyard-living.jpg" alt="Living room opening onto an olive-tree courtyard" loading="lazy"><figcaption><span>Residential</span>Courtyard living</figcaption></figure>
-    <figure class="slide"><img src="assets/images/hero-staircase.jpg" alt="Sculpted staircase in forest-green plaster" loading="lazy"><figcaption><span>Interior architecture</span>The sculpted stair</figcaption></figure>
-    <figure class="slide"><img src="assets/images/ivory-architecture.jpg" alt="Ivory plaster walls and travertine paving in sunlight" loading="lazy"><figcaption><span>Exterior</span>Light and stone</figcaption></figure>
-    <figure class="slide"><img src="assets/images/natural-materials.jpg" alt="Hand-selected natural materials" loading="lazy"><figcaption><span>Material selection</span>Travertine, marble, oak, linen</figcaption></figure>
-    <figure class="slide"><img src="assets/images/misty-forest.jpg" alt="Misty forest" loading="lazy"><figcaption><span>Landscape</span>Rooted in nature</figcaption></figure>
-  </div>
-  <p class="gallery-note">Mood imagery showing the LIVEEZE design direction.</p>
+  <ul class="sr-only">
+    <li>Courtyard living: a living room opening onto an olive-tree courtyard.</li>
+    <li>The sculpted stair: a staircase in forest-green plaster.</li>
+    <li>Light and stone: ivory plaster walls and travertine paving.</li>
+    <li>Material selection: travertine, marble, oak and linen.</li>
+    <li>Landscape: a misty forest.</li>
+  </ul>
 </section>
 
 <!-- STORY -->
 <section class="story" id="studio">
   <div class="story-media tilt reveal">
-    <img src="assets/images/ivory-architecture.jpg" alt="Sunlit courtyard entrance with an olive tree" loading="lazy">
+    <div class="wipe"><img src="assets/images/ivory-architecture.jpg" alt="Sunlit courtyard entrance with an olive tree" loading="lazy"></div>
     <img class="story-mono" src="assets/logo/monogram-beige.png" alt="">
   </div>
   <div class="story-text">
     <p class="eyebrow">Our story</p>
     <h2 class="h2">A beautiful space should never be hard to live in, or hard to create.</h2>
-    <span class="rule"></span>
     <p class="body">The name says it. <strong>LIVE</strong> is how people live and work in a space. <strong>EZE</strong> is ease: an effortless space and an effortless process. The double E stands for Elegance and Ease.</p>
     <p class="body">Our monogram tells the same story: the upright is architecture and permanence, the swash is design and comfort, and the taper runs from structure to the finest detail.</p>
     <p class="quote">You keep the joy of creating a space. We carry the complexity.</p>
