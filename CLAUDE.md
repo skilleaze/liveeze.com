@@ -5,7 +5,7 @@ Follow these rules for every design, page, document or asset made for LIVEEZE.
 ## Workflow
 - The live site is `website/` (plain HTML + CSS, no build step). Vercel serves `website/` as configured in `vercel.json`.
 - Every push to `main` deploys automatically to liveeze.com via Vercel's GitHub integration.
-- Portfolio: `website/portfolio.html` (served at /portfolio) with 12 collections from the client's PDFs; images in `website/assets/portfolio/<collection>/NN.jpg` (+ `NN-s.jpg` thumbnails). Homepage `#portfolio` section links to each collection (/portfolio#kitchen etc.).
+- Portfolio: `website/portfolio.html` (served at /portfolio) with 12 collections from the client's PDFs; images in `website/assets/portfolio/<collection>/NN.jpg` (+ `NN-s.jpg` thumbnails); client confirmed rights to use all designs. Homepage `#portfolio` section links to each collection (/portfolio#kitchen etc.).
 - GitHub repo: skilleaze/liveeze.com · Vercel project: liveeze.com (team skilleazecom-3109) · Domain DNS at GoDaddy (A @ → 216.150.1.1, CNAME www → Vercel). liveeze.com redirects to www.liveeze.com.
 
 ## Business
