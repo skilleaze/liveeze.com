@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://www.liveeze.com/</loc>
     <lastmod>2026-11-25</lastmod>
@@ -116,6 +116,88 @@
     <image:image><image:loc>https://www.liveeze.com/assets/portfolio/balcony/02.jpg</image:loc><image:title>Balcony and landscape design by LIVEEZE, 02</image:title></image:image>
     <image:image><image:loc>https://www.liveeze.com/assets/portfolio/balcony/03.jpg</image:loc><image:title>Balcony and landscape design by LIVEEZE, 03</image:title></image:image>
     <image:image><image:loc>https://www.liveeze.com/assets/portfolio/balcony/04.jpg</image:loc><image:title>Balcony and landscape design by LIVEEZE, 04</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.liveeze.com/projects/marhaba-manzil</loc>
+    <lastmod>2026-11-25</lastmod>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/01.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: From the gate</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/02.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Front elevation</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/03.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Front at dusk</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/04.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Front three-quarter</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/05.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Sitout side</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/06.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Left side</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/07.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Rear corner</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/08.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Rear corner, other side</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/09.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Right side</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/10.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Rear</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/11.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Side with compound</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/12.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Front, wide</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/13.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Front, close</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/14.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Aerial, full plot</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/15.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Aerial with roof</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/ground/01.jpg</image:loc><image:title>Marhaba Manzil, ground floor interiors: Sitout</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/ground/02.jpg</image:loc><image:title>Marhaba Manzil, ground floor interiors: Living</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/ground/03.jpg</image:loc><image:title>Marhaba Manzil, ground floor interiors: Dining &amp; family</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/ground/04.jpg</image:loc><image:title>Marhaba Manzil, ground floor interiors: Dining to courtyard</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/ground/05.jpg</image:loc><image:title>Marhaba Manzil, ground floor interiors: Courtyard</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/ground/06.jpg</image:loc><image:title>Marhaba Manzil, ground floor interiors: Courtyard from above</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/ground/07.jpg</image:loc><image:title>Marhaba Manzil, ground floor interiors: Kitchen</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/ground/08.jpg</image:loc><image:title>Marhaba Manzil, ground floor interiors: Office</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/ground/09.jpg</image:loc><image:title>Marhaba Manzil, ground floor interiors: Prayer room</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/ground/10.jpg</image:loc><image:title>Marhaba Manzil, ground floor interiors: Staircase passage</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/first/01.jpg</image:loc><image:title>Marhaba Manzil, first floor interiors: Family lounge</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/first/02.jpg</image:loc><image:title>Marhaba Manzil, first floor interiors: Balcony sitout</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/first/03.jpg</image:loc><image:title>Marhaba Manzil, first floor interiors: Bedroom 1</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/first/04.jpg</image:loc><image:title>Marhaba Manzil, first floor interiors: Bedroom 2</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/first/05.jpg</image:loc><image:title>Marhaba Manzil, first floor interiors: Bedroom 3</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/first/06.jpg</image:loc><image:title>Marhaba Manzil, first floor interiors: Bedroom 4</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/first/07.jpg</image:loc><image:title>Marhaba Manzil, first floor interiors: Bedroom 5</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/first/08.jpg</image:loc><image:title>Marhaba Manzil, first floor interiors: Guest bedroom</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/01.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Ground floor, top view</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/02.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Ground floor, angled</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/03.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Ground floor in the compound</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/04.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Whole house, open top</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/05.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: First floor, open top</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/06.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Kitchen &amp; store</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/07.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Kitchen, angled</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/08.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Kitchen, store &amp; bath</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/09.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Store &amp; bath</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/10.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Toilet by the stairs</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/11.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Toilet by the office</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/12.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Bedroom with baths</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/13.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Dressing &amp; baths</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/14.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Bath, top view</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/15.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Dressing &amp; bath</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/16.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Dressing room</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/17.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Bedroom bath</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/cutaway/18.jpg</image:loc><image:title>Marhaba Manzil, open-top 3d views: Dressing, top view</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/01.jpg</image:loc><image:title>Marhaba Manzil, front design options: Wood-lined balcony box · slate stone · pivot door</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/02.jpg</image:loc><image:title>Marhaba Manzil, front design options: Floating wood canopy · black stone pillars</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/03.jpg</image:loc><image:title>Marhaba Manzil, front design options: Cream frames · wood fins · planter ledges</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/04.jpg</image:loc><image:title>Marhaba Manzil, front design options: Charcoal box frame · wood louvres · stone pillars</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/05.jpg</image:loc><image:title>Marhaba Manzil, front design options: Blush brick · charcoal frame</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/06.jpg</image:loc><image:title>Marhaba Manzil, front design options: Grey brick · wood fins</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/07.jpg</image:loc><image:title>Marhaba Manzil, front design options: Cream brick · wood band</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/08.jpg</image:loc><image:title>Marhaba Manzil, front design options: A-gable · round window · red brick</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/09.jpg</image:loc><image:title>Marhaba Manzil, front design options: Mono-pitch glass · red brick</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/10.jpg</image:loc><image:title>Marhaba Manzil, front design options: Stepped boxes · grey stone</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/11.jpg</image:loc><image:title>Marhaba Manzil, front design options: Charcoal frame · cream stone</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/12.jpg</image:loc><image:title>Marhaba Manzil, front design options: Charcoal frame · stone planters</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/13.jpg</image:loc><image:title>Marhaba Manzil, front design options: Charcoal frame · lit stone</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/14.jpg</image:loc><image:title>Marhaba Manzil, front design options: Charcoal frame · black planters</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/15.jpg</image:loc><image:title>Marhaba Manzil, front design options: A-gable glass · shingle roof</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/16.jpg</image:loc><image:title>Marhaba Manzil, front design options: Charcoal frame · white brick</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/17.jpg</image:loc><image:title>Marhaba Manzil, front design options: Charcoal frame · black door</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/18.jpg</image:loc><image:title>Marhaba Manzil, front design options: Charcoal frame · lit steps</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/19.jpg</image:loc><image:title>Marhaba Manzil, front design options: A-gable glass · siding</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/20.jpg</image:loc><image:title>Marhaba Manzil, front design options: A-gable · timber vent</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/21.jpg</image:loc><image:title>Marhaba Manzil, front design options: Charcoal frame · grey entrance</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/22.jpg</image:loc><image:title>Marhaba Manzil, front design options: Charcoal frame · dusk</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/23.jpg</image:loc><image:title>Marhaba Manzil, front design options: Brick, wood fins and pergola</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/fronts/24.jpg</image:loc><image:title>Marhaba Manzil, front design options: A-gable · round window · iron rail</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/plan-ground.png</image:loc><image:title>Marhaba Manzil ground floor plan</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/plan-first.png</image:loc><image:title>Marhaba Manzil first floor plan</image:title></image:image>
+    <video:video><video:thumbnail_loc>https://www.liveeze.com/assets/projects/marhaba-manzil/film-poster.jpg</video:thumbnail_loc><video:title>Marhaba Manzil, 3D walkthrough film</video:title><video:description>The whole home in one 3D film, from the gate to the courtyard and every room.</video:description><video:content_loc>https://www.liveeze.com/assets/projects/marhaba-manzil/film.mp4</video:content_loc><video:duration>210</video:duration></video:video>
   </url>
   <url>
     <loc>https://www.liveeze.com/privacy</loc>

@@ -1,0 +1,581 @@
+[
+ {
+  "key": "exterior",
+  "title": "Exterior & compound",
+  "items": [
+   {
+    "src": "/assets/projects/marhaba-manzil/exterior/01.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/exterior/01-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "From the gate"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/exterior/02.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/exterior/02-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Front elevation"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/exterior/03.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/exterior/03-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Front at dusk"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/exterior/04.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/exterior/04-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Front three-quarter"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/exterior/05.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/exterior/05-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Sitout side"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/exterior/06.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/exterior/06-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Left side"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/exterior/07.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/exterior/07-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Rear corner"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/exterior/08.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/exterior/08-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Rear corner, other side"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/exterior/09.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/exterior/09-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Right side"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/exterior/10.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/exterior/10-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Rear"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/exterior/11.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/exterior/11-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Side with compound"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/exterior/12.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/exterior/12-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Front, wide"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/exterior/13.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/exterior/13-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Front, close"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/exterior/14.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/exterior/14-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Aerial, full plot"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/exterior/15.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/exterior/15-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Aerial with roof"
+   }
+  ]
+ },
+ {
+  "key": "ground",
+  "title": "Ground floor interiors",
+  "items": [
+   {
+    "src": "/assets/projects/marhaba-manzil/ground/01.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/ground/01-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Sitout"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/ground/02.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/ground/02-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Living"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/ground/03.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/ground/03-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Dining & family"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/ground/04.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/ground/04-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Dining to courtyard"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/ground/05.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/ground/05-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Courtyard"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/ground/06.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/ground/06-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Courtyard from above"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/ground/07.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/ground/07-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Kitchen"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/ground/08.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/ground/08-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Office"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/ground/09.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/ground/09-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Prayer room"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/ground/10.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/ground/10-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Staircase passage"
+   }
+  ]
+ },
+ {
+  "key": "first",
+  "title": "First floor interiors",
+  "items": [
+   {
+    "src": "/assets/projects/marhaba-manzil/first/01.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/first/01-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Family lounge"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/first/02.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/first/02-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Balcony sitout"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/first/03.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/first/03-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Bedroom 1"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/first/04.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/first/04-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Bedroom 2"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/first/05.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/first/05-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Bedroom 3"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/first/06.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/first/06-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Bedroom 4"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/first/07.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/first/07-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Bedroom 5"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/first/08.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/first/08-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Guest bedroom"
+   }
+  ]
+ },
+ {
+  "key": "cutaway",
+  "title": "Open-top 3D views",
+  "items": [
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/01.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/01-s.jpg",
+    "w": 760,
+    "h": 760,
+    "caption": "Ground floor, top view"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/02.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/02-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Ground floor, angled"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/03.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/03-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Ground floor in the compound"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/04.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/04-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Whole house, open top"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/05.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/05-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "First floor, open top"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/06.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/06-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Kitchen & store"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/07.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/07-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Kitchen, angled"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/08.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/08-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Kitchen, store & bath"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/09.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/09-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Store & bath"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/10.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/10-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Toilet by the stairs"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/11.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/11-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Toilet by the office"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/12.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/12-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Bedroom with baths"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/13.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/13-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Dressing & baths"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/14.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/14-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Bath, top view"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/15.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/15-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Dressing & bath"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/16.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/16-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Dressing room"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/17.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/17-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Bedroom bath"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/cutaway/18.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/cutaway/18-s.jpg",
+    "w": 760,
+    "h": 424,
+    "caption": "Dressing, top view"
+   }
+  ]
+ },
+ {
+  "key": "fronts",
+  "title": "Front design options",
+  "items": [
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/01.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/01-s.jpg",
+    "w": 760,
+    "h": 567,
+    "caption": "Wood-lined balcony box · slate stone · pivot door",
+    "style": "Premium"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/02.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/02-s.jpg",
+    "w": 760,
+    "h": 567,
+    "caption": "Floating wood canopy · black stone pillars",
+    "style": "Premium"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/03.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/03-s.jpg",
+    "w": 760,
+    "h": 567,
+    "caption": "Cream frames · wood fins · planter ledges",
+    "style": "Premium"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/04.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/04-s.jpg",
+    "w": 760,
+    "h": 567,
+    "caption": "Charcoal box frame · wood louvres · stone pillars",
+    "style": "Premium"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/05.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/05-s.jpg",
+    "w": 760,
+    "h": 507,
+    "caption": "Blush brick · charcoal frame",
+    "style": "Flat roof"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/06.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/06-s.jpg",
+    "w": 760,
+    "h": 507,
+    "caption": "Grey brick · wood fins",
+    "style": "Flat roof"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/07.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/07-s.jpg",
+    "w": 760,
+    "h": 579,
+    "caption": "Cream brick · wood band",
+    "style": "Flat roof"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/08.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/08-s.jpg",
+    "w": 760,
+    "h": 507,
+    "caption": "A-gable · round window · red brick",
+    "style": "A-gable"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/09.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/09-s.jpg",
+    "w": 760,
+    "h": 507,
+    "caption": "Mono-pitch glass · red brick",
+    "style": "Mono-pitch"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/10.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/10-s.jpg",
+    "w": 760,
+    "h": 507,
+    "caption": "Stepped boxes · grey stone",
+    "style": "Stepped"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/11.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/11-s.jpg",
+    "w": 760,
+    "h": 579,
+    "caption": "Charcoal frame · cream stone",
+    "style": "Flat roof"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/12.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/12-s.jpg",
+    "w": 760,
+    "h": 578,
+    "caption": "Charcoal frame · stone planters",
+    "style": "Flat roof"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/13.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/13-s.jpg",
+    "w": 760,
+    "h": 578,
+    "caption": "Charcoal frame · lit stone",
+    "style": "Flat roof"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/14.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/14-s.jpg",
+    "w": 760,
+    "h": 507,
+    "caption": "Charcoal frame · black planters",
+    "style": "Flat roof"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/15.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/15-s.jpg",
+    "w": 760,
+    "h": 507,
+    "caption": "A-gable glass · shingle roof",
+    "style": "A-gable"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/16.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/16-s.jpg",
+    "w": 760,
+    "h": 578,
+    "caption": "Charcoal frame · white brick",
+    "style": "Flat roof"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/17.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/17-s.jpg",
+    "w": 760,
+    "h": 578,
+    "caption": "Charcoal frame · black door",
+    "style": "Flat roof"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/18.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/18-s.jpg",
+    "w": 760,
+    "h": 525,
+    "caption": "Charcoal frame · lit steps",
+    "style": "Flat roof"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/19.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/19-s.jpg",
+    "w": 760,
+    "h": 507,
+    "caption": "A-gable glass · siding",
+    "style": "A-gable"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/20.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/20-s.jpg",
+    "w": 760,
+    "h": 507,
+    "caption": "A-gable · timber vent",
+    "style": "A-gable"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/21.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/21-s.jpg",
+    "w": 760,
+    "h": 507,
+    "caption": "Charcoal frame · grey entrance",
+    "style": "Flat roof"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/22.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/22-s.jpg",
+    "w": 760,
+    "h": 507,
+    "caption": "Charcoal frame · dusk",
+    "style": "Flat roof"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/23.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/23-s.jpg",
+    "w": 760,
+    "h": 507,
+    "caption": "Brick, wood fins and pergola",
+    "style": "Stepped"
+   },
+   {
+    "src": "/assets/projects/marhaba-manzil/fronts/24.jpg",
+    "thumb": "/assets/projects/marhaba-manzil/fronts/24-s.jpg",
+    "w": 760,
+    "h": 507,
+    "caption": "A-gable · round window · iron rail",
+    "style": "A-gable"
+   }
+  ]
+ }
+]

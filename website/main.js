@@ -312,7 +312,7 @@
   /* =====================================================
      PORTFOLIO: filters + full-screen viewer
      ===================================================== */
-  const chips = [...document.querySelectorAll('.pf-chip')];
+  const chips = [...document.querySelectorAll('.pf-chip[data-filter]')];
   const sets = [...document.querySelectorAll('.pf-set')];
   function applyFilter(cat, scroll) {
     chips.forEach(c => { const on = c.dataset.filter === cat; c.classList.toggle('is-on', on); c.setAttribute('aria-pressed', on); });

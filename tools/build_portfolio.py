@@ -102,6 +102,7 @@ page = f'''<!DOCTYPE html>
   <nav class="nav" aria-label="Main">
     <a href="/#services">Services</a>
     <a href="/#process">Process</a>
+    <a href="/#projects">Projects</a>
     <a href="/portfolio" class="is-current" aria-current="page">Portfolio</a>
     <a href="/#studio">Studio</a>
     <a href="/#faq">FAQ</a>
@@ -126,6 +127,12 @@ page = f'''<!DOCTYPE html>
     <p class="hero-lead">{TOTAL} designs across twelve collections, from building façades to the finest joinery. Choose a collection, or open any design to view it full screen.</p>
   </div>
 </section>
+
+<a class="pf-feature" href="/projects/marhaba-manzil">
+  <img src="/assets/projects/marhaba-manzil/exterior/03-s.jpg" alt="" loading="lazy">
+  <span><strong>Featured project: Marhaba Manzil</strong><span>A two-storey courtyard villa in Ishwaramangala, Puttur. Exteriors, interiors, floor plans, 24 front options, a 3D film and an interactive 3D model.</span></span>
+  <span class="btn btn-dark">View the project</span>
+</a>
 
 <div class="pf-filter" role="toolbar" aria-label="Filter collections">
   <div class="pf-chips">

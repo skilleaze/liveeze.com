@@ -133,6 +133,37 @@ if 'rel="canonical"' not in pv:
     pv = pv.replace('<title>', f'<link rel="canonical" href="{pv_url}">\n<title>', 1)
     open(os.path.join(SITE, 'privacy.html'), 'w').write(pv)
 
+# ---------- Project: Marhaba Manzil ----------
+MM = json.load(open(os.path.join(HERE, 'marhaba.json')))
+pj_url = f'{BASE}/projects/marhaba-manzil'
+pj_imgs = [(f'{BASE}{it["src"]}', f'Marhaba Manzil, {g["title"].lower()}: {it["caption"]}') for g in MM for it in g['items']]
+pj_imgs += [(f'{BASE}/assets/projects/marhaba-manzil/plan-ground.png', 'Marhaba Manzil ground floor plan'),
+            (f'{BASE}/assets/projects/marhaba-manzil/plan-first.png', 'Marhaba Manzil first floor plan')]
+video = {'@type': 'VideoObject', '@id': f'{pj_url}#film', 'name': 'Marhaba Manzil, 3D walkthrough film',
+         'description': 'The whole home in one 3D film, from the gate to the courtyard and every room.',
+         'thumbnailUrl': f'{BASE}/assets/projects/marhaba-manzil/film-poster.jpg',
+         'contentUrl': f'{BASE}/assets/projects/marhaba-manzil/film.mp4', 'uploadDate': '2026-11-25T12:00:00+04:00',
+         'duration': 'PT3M30S', 'creator': {'@id': ORG}, 'publisher': {'@id': ORG}}
+house = {'@type': 'CreativeWork', '@id': f'{pj_url}#project', 'name': 'Marhaba Manzil',
+         'description': 'Two-storey residential villa around an open-to-sky courtyard in Ishwaramangala, Puttur, Dakshina Kannada: 7 bedrooms, 8 baths and toilets, about 3,400 sq ft built-up.',
+         'creator': {'@id': ORG}, 'genre': 'Residential architecture and interior design', 'url': pj_url,
+         'image': f'{BASE}{MM[0]["items"][0]["src"]}', 'sameAs': 'https://marhabamanzil.vercel.app/',
+         'locationCreated': {'@type': 'Place', 'name': 'Ishwaramangala, Puttur, Dakshina Kannada, Karnataka, India'},
+         'about': {'@type': 'House', 'name': 'Marhaba Manzil', 'numberOfRooms': 7, 'numberOfBedrooms': 7, 'numberOfBathroomsTotal': 8,
+                   'floorSize': {'@type': 'QuantitativeValue', 'value': 3400, 'unitCode': 'FTK'}},
+         'hasPart': [{'@id': f'{pj_url}#{g["key"]}'} for g in MM] + [{'@id': f'{pj_url}#film'}]}
+pj_galleries = [{'@type': 'ImageGallery', '@id': f'{pj_url}#{g["key"]}', 'name': f'Marhaba Manzil: {g["title"]}', 'numberOfItems': len(g['items']),
+                 'image': [{'@type': 'ImageObject', 'contentUrl': f'{BASE}{it["src"]}', 'name': it['caption'], 'creator': {'@id': ORG}, 'creditText': 'LIVEEZE'} for it in g['items']]}
+                for g in MM]
+inject(os.path.join(SITE, 'projects', 'marhaba-manzil.html'), ld([
+    org(), website(),
+    {'@type': 'WebPage', '@id': f'{pj_url}#webpage', 'url': pj_url, 'name': 'Marhaba Manzil · Residential Villa Project · LIVEEZE',
+     'isPartOf': {'@id': SITE_ID}, 'about': {'@id': f'{pj_url}#project'}, 'inLanguage': 'en', 'breadcrumb': {'@id': f'{pj_url}#breadcrumb'},
+     'primaryImageOfPage': {'@type': 'ImageObject', 'url': f'{BASE}/assets/og-marhaba.jpg', 'width': 1200, 'height': 630}},
+    breadcrumbs(pj_url, [('Home', f'{BASE}/'), ('Projects', f'{BASE}/#projects'), ('Marhaba Manzil', pj_url)]),
+    house, video, *pj_galleries,
+]))
+
 # ---------- Sitemap with images ----------
 def img(loc, title):
     return f'    <image:image><image:loc>{loc}</image:loc><image:title>{html.escape(title)}</image:title></image:image>'
@@ -145,9 +176,10 @@ home_imgs = [img(f'{BASE}/assets/images/{f}', t) for f, t in [
 ]]
 pf_imgs = [img(f'{BASE}/{it["src"]}', f'{ALT[c]} by LIVEEZE, {i:02d}') for c, *_ in CATS for i, it in enumerate(data[c], 1)]
 sm = ['<?xml version="1.0" encoding="UTF-8"?>',
-      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">',
+      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">',
       f'  <url>\n    <loc>{BASE}/</loc>\n    <lastmod>{TODAY}</lastmod>\n' + '\n'.join(home_imgs) + '\n  </url>',
       f'  <url>\n    <loc>{pf_url}</loc>\n    <lastmod>{TODAY}</lastmod>\n' + '\n'.join(pf_imgs) + '\n  </url>',
+      f'  <url>\n    <loc>{pj_url}</loc>\n    <lastmod>{TODAY}</lastmod>\n' + '\n'.join(img(u, t) for u, t in pj_imgs) + f'\n    <video:video><video:thumbnail_loc>{BASE}/assets/projects/marhaba-manzil/film-poster.jpg</video:thumbnail_loc><video:title>Marhaba Manzil, 3D walkthrough film</video:title><video:description>The whole home in one 3D film, from the gate to the courtyard and every room.</video:description><video:content_loc>{BASE}/assets/projects/marhaba-manzil/film.mp4</video:content_loc><video:duration>210</video:duration></video:video>\n  </url>',
       f'  <url>\n    <loc>{pv_url}</loc>\n    <lastmod>{TODAY}</lastmod>\n  </url>',
       '</urlset>', '']
 open(os.path.join(SITE, 'sitemap.xml'), 'w').write('\n'.join(sm))
