@@ -2,58 +2,84 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>LIVEEZE · Interior Architecture, Design &amp; Build</title>
 <meta name="description" content="LIVEEZE is a full-service design and build studio for residential and commercial spaces. Interior architecture, 3D visualisation, furniture, lighting, materials, landscape, contracting and turnkey delivery, under one roof.">
+<link rel="canonical" href="https://www.liveeze.com/">
 <meta name="theme-color" content="#282822">
-<meta property="og:title" content="LIVEEZE · Live exquisitely.">
-<meta property="og:description" content="Interior architecture, design and build, under one roof. One studio from first sketch to final key.">
-<meta property="og:image" content="https://www.liveeze.com/assets/images/hero-staircase.jpg">
-<meta property="og:url" content="https://www.liveeze.com">
-<link rel="icon" type="image/png" href="assets/logo/monogram-charcoal.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LIVEEZE">
+<meta property="og:title" content="LIVEEZE · Interior architecture, design &amp; build">
+<meta property="og:description" content="One studio from first sketch to final key. Residential and commercial spaces, designed and built under one roof.">
+<meta property="og:url" content="https://www.liveeze.com/">
+<meta property="og:image" content="https://www.liveeze.com/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="LIVEEZE wordmark over a lit villa entrance. Live exquisitely.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LIVEEZE · Interior architecture, design &amp; build">
+<meta name="twitter:description" content="One studio from first sketch to final key.">
+<meta name="twitter:image" content="https://www.liveeze.com/assets/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600&display=swap">
 <link rel="preload" as="image" href="assets/images/hero-staircase.jpg">
 <link rel="stylesheet" href="styles.css">
 <script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "LIVEEZE",
+  "url": "https://www.liveeze.com/",
+  "logo": "https://www.liveeze.com/assets/icons/icon-512.png",
+  "image": "https://www.liveeze.com/assets/og-image.jpg",
+  "slogan": "Live exquisitely.",
+  "email": "info@liveeze.com",
+  "description": "Full-service interior architecture, design and build studio for residential and commercial spaces, from first sketch to final key.",
+  "knowsAbout": ["Interior architecture", "Exterior and interior 3D visualisation", "Furniture layout", "Furniture design and development", "Lighting design", "Material selection", "Landscape planning", "Contracting", "Consulting", "Turnkey solutions"]
+}
+</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <div class="loader" aria-hidden="true">
   <img src="assets/logo/monogram-ivory.png" alt="">
-  <span class="loader-line"></span>
 </div>
 
-<div class="cursor" aria-hidden="true"><span class="cursor-ring"></span><span class="cursor-dot"></span></div>
-
 <header class="site-header" id="top">
-  <a href="#top" class="brand" aria-label="LIVEEZE home">
-    <img class="brand-light" src="assets/logo/wordmark-ivory.png" alt="LIVEEZE">
-    <img class="brand-dark" src="assets/logo/wordmark-charcoal.png" alt="" aria-hidden="true">
+  <a href="/" class="brand" aria-label="LIVEEZE home">
+    <img class="brand-light" src="assets/logo/wordmark-ivory.png" alt="LIVEEZE" width="140" height="20">
+    <img class="brand-dark" src="assets/logo/wordmark-charcoal.png" alt="" aria-hidden="true" width="140" height="20">
   </a>
   <nav class="nav" aria-label="Main">
     <a href="#services">Services</a>
     <a href="#process">Process</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#studio">Studio</a>
+    <a href="#faq">FAQ</a>
     <a href="#contact" class="nav-cta">Start a project</a>
   </nav>
   <div class="header-tools">
-    <button class="sound-btn" aria-pressed="false" aria-label="Turn sound on">
+    <button class="sound-btn" type="button" aria-pressed="false" aria-label="Sound">
       <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
       <span class="sound-label">Sound</span>
     </button>
-    <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
   </div>
 </header>
 
-<main>
+<main id="main">
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-media">
-    <img class="hero-img" src="assets/images/hero-staircase.jpg" alt="A curved forest-green staircase lit by a skylight">
+    <img class="hero-img" src="assets/images/hero-staircase.jpg" alt="A curved forest-green staircase lit by a skylight" width="1672" height="941">
   </div>
   <canvas class="dust" aria-hidden="true"></canvas>
   <div class="hero-shade"></div>
@@ -67,16 +93,15 @@
     <p class="hero-lead reveal">One studio carries your home or workplace from the first sketch to the final key, for residential and commercial clients.</p>
     <div class="hero-actions reveal">
       <a href="#contact" class="btn btn-light">Start a project</a>
-      <a href="#process" class="btn btn-ghost-light">See how we work</a>
+      <a href="/portfolio" class="btn btn-ghost-light">View our work</a>
     </div>
   </div>
-  <button class="sound-invite reveal" type="button"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Experience with sound</span></button>
+  <p class="sound-hint reveal" aria-hidden="true"><span class="bars"><i></i><i></i><i></i><i></i></span><span class="sound-hint-text">Tap anywhere for sound</span></p>
   <p class="tagline tagline-light hero-tag">LIVE EXQUISITELY.</p>
-  <a href="#intro" class="scroll-cue" aria-label="Scroll to the next section"><span></span></a>
 </section>
 
-<!-- INTRO STATEMENT -->
-<section class="intro" id="intro">
+<!-- INTRO -->
+<section class="intro" id="intro" data-sound>
   <p class="eyebrow">The idea</p>
   <p class="statement" data-words>Most projects need an architect, a designer, a contractor and a dozen suppliers. LIVEEZE is all of them: one team and one point of responsibility, from first sketch to final key.</p>
   <div class="intro-pillars">
@@ -86,7 +111,6 @@
   </div>
 </section>
 
-<!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
     <span>Interior architecture</span><b></b><span><em>3D visualisation</em></span><b></b><span>Furniture design</span><b></b><span><em>Lighting</em></span><b></b><span>Material selection</span><b></b><span><em>Landscape</em></span><b></b><span>Contracting</span><b></b><span><em>Turnkey</em></span><b></b>
@@ -95,112 +119,92 @@
 </div>
 
 <!-- SERVICES -->
-<section class="services" id="services">
+<section class="services" id="services" data-sound>
   <div class="section-head">
     <p class="eyebrow">What we do</p>
     <h2 class="h2">Every discipline a space needs.</h2>
-    <p class="body">Choose one service or let us take the whole journey. Each stage is handled in-house, so nothing is lost between hands.</p>
+    <p class="body">Choose a single service or let us take the whole journey. Each stage is handled in-house, so nothing is lost between hands.</p>
   </div>
   <div class="service-grid">
-    <article class="service-card tilt reveal">
-      <div class="service-img wipe"><img src="assets/images/ivory-architecture.jpg" alt="Curved ivory plaster wall with a travertine bench" loading="lazy"></div>
+    <article class="service-card reveal">
+      <div class="service-img wipe"><img src="assets/images/ivory-architecture.jpg" alt="Curved ivory plaster wall with a travertine bench" loading="lazy" width="1672" height="941"></div>
       <div class="service-body">
         <span class="service-n">Design</span>
         <h3>Shape the vision</h3>
-        <ul>
-          <li>Interior architecture</li>
-          <li>Exterior &amp; interior 3D visualisation</li>
-          <li>Furniture layout</li>
-          <li>Lighting design</li>
-          <li>Material selection</li>
-        </ul>
+        <dl class="svc">
+          <dt>Interior architecture</dt><dd>Layouts, ceilings, walls, joinery and the flow between rooms.</dd>
+          <dt>Exterior &amp; interior 3D visualisation</dt><dd>Photorealistic views of your space before any work begins.</dd>
+          <dt>Furniture layout</dt><dd>Each room arranged around how it will be used, with easy circulation.</dd>
+          <dt>Lighting design</dt><dd>Layered ambient, task and accent light, including concealed lighting.</dd>
+          <dt>Material selection</dt><dd>Stone, wood, fabric and finishes, sampled and chosen with you.</dd>
+        </dl>
       </div>
     </article>
-    <article class="service-card tilt reveal">
-      <div class="service-img wipe"><img src="assets/images/natural-materials.jpg" alt="Travertine, green marble, dark oak and linen samples" loading="lazy"></div>
+    <article class="service-card reveal">
+      <div class="service-img wipe"><img src="assets/images/natural-materials.jpg" alt="Travertine, green marble, dark oak and linen samples" loading="lazy" width="1672" height="941"></div>
       <div class="service-body">
         <span class="service-n">Build</span>
         <h3>Make it real</h3>
-        <ul>
-          <li>Contracting</li>
-          <li>Furniture design &amp; development</li>
-          <li>Landscape planning</li>
-        </ul>
+        <dl class="svc">
+          <dt>Contracting</dt><dd>Our team builds what was designed and coordinates every trade on site.</dd>
+          <dt>Furniture design &amp; development</dt><dd>Bespoke pieces made for the space, from TV units to wardrobes.</dd>
+          <dt>Landscape planning</dt><dd>Gardens, balconies and terraces with planting, paving and outdoor light.</dd>
+        </dl>
       </div>
     </article>
-    <article class="service-card tilt reveal">
-      <div class="service-img wipe"><img src="assets/images/courtyard-living.jpg" alt="Finished courtyard living room in warm evening light" loading="lazy"></div>
+    <article class="service-card reveal">
+      <div class="service-img wipe"><img src="assets/images/courtyard-living.jpg" alt="Finished courtyard living room in warm evening light" loading="lazy" width="1672" height="941"></div>
       <div class="service-body">
         <span class="service-n">Deliver</span>
         <h3>Hand over the key</h3>
-        <ul>
-          <li>Consulting</li>
-          <li>Turnkey solutions</li>
-        </ul>
+        <dl class="svc">
+          <dt>Consulting</dt><dd>Expert advice on a plan, a purchase or a renovation.</dd>
+          <dt>Turnkey solutions</dt><dd>Designed, built, furnished and ready to move into.</dd>
+        </dl>
       </div>
     </article>
   </div>
 </section>
 
-<!-- PROCESS: 3D EXPLODED STACK -->
-<section class="process" id="process">
-  <div class="process-sticky">
-    <div class="process-text">
-      <p class="eyebrow eyebrow-light">How it works</p>
-      <h2 class="h2 h2-light">Four layers, one team.</h2>
-      <ol class="steps">
-        <li class="step is-active" data-step="0"><span class="step-n">01</span><div><h3>Concept</h3><p>We listen to how you live and work, then shape the brief and the vision.</p></div></li>
-        <li class="step" data-step="1"><span class="step-n">02</span><div><h3>Design</h3><p>Plans, 3D visualisation, furniture, lighting and materials, resolved in detail.</p></div></li>
-        <li class="step" data-step="2"><span class="step-n">03</span><div><h3>Build</h3><p>Our contracting team executes the design, with one point of responsibility.</p></div></li>
-        <li class="step" data-step="3"><span class="step-n">04</span><div><h3>Handover</h3><p>A finished, furnished space, ready to live or work in.</p></div></li>
-      </ol>
-      <div class="process-bar"><span></span></div>
-    </div>
-    <div class="stack-scene" aria-hidden="true">
-      <div class="stack">
-        <div class="slab slab-0" style="--i:0"><div class="face face-plan"><span class="slab-label">01 Concept</span></div></div>
-        <div class="slab slab-1" style="--i:1"><div class="face face-img" style="background-image:url(assets/images/natural-materials.jpg)"><span class="slab-label">02 Design</span></div></div>
-        <div class="slab slab-2" style="--i:2"><div class="face face-grid"><span class="slab-label">03 Build</span></div></div>
-        <div class="slab slab-3" style="--i:3"><div class="face face-img" style="background-image:url(assets/images/courtyard-living.jpg)"><span class="slab-label">04 Handover</span></div></div>
-      </div>
-    </div>
-  </div>
+<!-- WHO WE WORK WITH -->
+<section class="sectors" data-sound>
+  <a class="sector reveal" href="/portfolio#living">
+    <span class="sector-img wipe"><img src="assets/portfolio/living/03-s.jpg" alt="" loading="lazy"></span>
+    <span class="sector-body">
+      <span class="eyebrow eyebrow-light">Residential</span>
+      <span class="sector-title">Homes, villas and apartments</span>
+      <span class="sector-text">Exteriors, living and dining rooms, kitchens, bedrooms, wardrobes, bathrooms, balconies and gardens.</span>
+      <span class="sector-link">See residential work</span>
+    </span>
+  </a>
+  <a class="sector reveal" href="/portfolio#office">
+    <span class="sector-img wipe"><img src="assets/portfolio/hospitality/01-s.jpg" alt="" loading="lazy"></span>
+    <span class="sector-body">
+      <span class="eyebrow eyebrow-light">Commercial</span>
+      <span class="sector-title">Workplaces, hospitality and buildings</span>
+      <span class="sector-text">Offices and executive cabins, restaurants, cafés and lobbies, and commercial building façades.</span>
+      <span class="sector-link">See commercial work</span>
+    </span>
+  </a>
 </section>
 
-<!-- SPACES: 3D WALK-THROUGH -->
-<section class="walk" id="spaces">
-  <div class="walk-sticky">
-    <div class="walk-head">
-      <p class="eyebrow eyebrow-light">Spaces</p>
-      <h2 class="h2 h2-light">Walk through the atmosphere.</h2>
-    </div>
-    <div class="walk-world" aria-hidden="true">
-      <div class="walk-floor"></div>
-      <div class="walk-ceil"></div>
-      <figure class="room" data-x="-1"><img src="assets/portfolio/residence/06.jpg" alt=""><figcaption><span>Residence exteriors</span>Evening arrival</figcaption></figure>
-      <figure class="room" data-x="1"><img src="assets/portfolio/living/03.jpg" alt=""><figcaption><span>Living rooms</span>Layered light</figcaption></figure>
-      <figure class="room" data-x="-1"><img src="assets/portfolio/kitchen/05.jpg" alt=""><figcaption><span>Kitchens</span>The island</figcaption></figure>
-      <figure class="room" data-x="1"><img src="assets/portfolio/hospitality/01.jpg" alt=""><figcaption><span>Hospitality</span>An evening dining room</figcaption></figure>
-      <figure class="room" data-x="0"><img src="assets/portfolio/balcony/02.jpg" alt=""><figcaption><span>Balconies &amp; landscaping</span>The roof terrace</figcaption></figure>
-      <div class="room room-end" data-x="0"><img src="assets/logo/monogram-ivory.png" alt=""><p class="tagline tagline-light">LIVE EXQUISITELY.</p></div>
-    </div>
-    <div class="walk-ui">
-      <span class="walk-count"><b>01</b> / 05</span>
-      <span class="walk-bar"><i></i></span>
-      <a class="walk-note" href="/portfolio">From the LIVEEZE portfolio</a>
-    </div>
+<!-- PROCESS -->
+<section class="process" id="process" data-sound>
+  <div class="section-head">
+    <p class="eyebrow eyebrow-light">How it works</p>
+    <h2 class="h2 h2-light">Four steps, one team.</h2>
+    <p class="body body-light">A clear path from the first conversation to the day you receive the key.</p>
   </div>
-  <ul class="sr-only">
-    <li>Residence exteriors: Evening arrival.</li>
-    <li>Living rooms: Layered light.</li>
-    <li>Kitchens: The island.</li>
-    <li>Hospitality: An evening dining room.</li>
-    <li>Balconies &amp; landscaping: The roof terrace.</li>
-  </ul>
+  <ol class="steps">
+    <li class="step reveal"><span class="step-n">01</span><h3>Consultation &amp; concept</h3><p>We listen to how you live or work, understand the site and agree the brief.</p><p class="step-get"><span>You receive</span>A clear brief and design direction.</p></li>
+    <li class="step reveal"><span class="step-n">02</span><h3>Design &amp; visualisation</h3><p>Plans, 3D views, furniture, lighting and materials, resolved in detail with you.</p><p class="step-get"><span>You receive</span>Drawings, 3D visuals and a material palette.</p></li>
+    <li class="step reveal"><span class="step-n">03</span><h3>Build</h3><p>Our contracting team carries out the design and coordinates every trade on site.</p><p class="step-get"><span>You receive</span>One point of responsibility throughout.</p></li>
+    <li class="step reveal"><span class="step-n">04</span><h3>Handover</h3><p>Final finishes, furnishing and styling, then the key is in your hand.</p><p class="step-get"><span>You receive</span>A finished space, ready to live or work in.</p></li>
+  </ol>
 </section>
 
 <!-- PORTFOLIO:START -->
-<section class="collections" id="portfolio">
+<section class="collections" id="portfolio" data-sound>
   <div class="section-head section-head-row">
     <div>
       <p class="eyebrow">Portfolio</p>
@@ -209,51 +213,51 @@
     <a href="/portfolio" class="btn btn-dark">View the full portfolio</a>
   </div>
   <div class="col-grid">
-    <a class="col-tile tilt reveal" href="/portfolio#residence">
+    <a class="col-tile reveal" href="/portfolio#residence">
       <span class="col-img wipe"><img src="assets/portfolio/residence/05-s.jpg" width="760" height="760" alt="" loading="lazy" decoding="async"></span>
       <span class="col-meta"><span class="col-n">01</span><span class="col-name">Residence exteriors</span><span class="col-count">19</span></span>
     </a>
-    <a class="col-tile tilt reveal" href="/portfolio#commercial">
+    <a class="col-tile reveal" href="/portfolio#commercial">
       <span class="col-img wipe"><img src="assets/portfolio/commercial/02-s.jpg" width="760" height="760" alt="" loading="lazy" decoding="async"></span>
       <span class="col-meta"><span class="col-n">02</span><span class="col-name">Commercial building exteriors</span><span class="col-count">8</span></span>
     </a>
-    <a class="col-tile tilt reveal" href="/portfolio#hospitality">
+    <a class="col-tile reveal" href="/portfolio#hospitality">
       <span class="col-img wipe"><img src="assets/portfolio/hospitality/01-s.jpg" width="760" height="570" alt="" loading="lazy" decoding="async"></span>
       <span class="col-meta"><span class="col-n">03</span><span class="col-name">Hospitality</span><span class="col-count">8</span></span>
     </a>
-    <a class="col-tile tilt reveal" href="/portfolio#office">
+    <a class="col-tile reveal" href="/portfolio#office">
       <span class="col-img wipe"><img src="assets/portfolio/office/03-s.jpg" width="760" height="728" alt="" loading="lazy" decoding="async"></span>
       <span class="col-meta"><span class="col-n">04</span><span class="col-name">Office designs</span><span class="col-count">15</span></span>
     </a>
-    <a class="col-tile tilt reveal" href="/portfolio#living">
+    <a class="col-tile reveal" href="/portfolio#living">
       <span class="col-img wipe"><img src="assets/portfolio/living/03-s.jpg" width="760" height="921" alt="" loading="lazy" decoding="async"></span>
       <span class="col-meta"><span class="col-n">05</span><span class="col-name">Living rooms</span><span class="col-count">8</span></span>
     </a>
-    <a class="col-tile tilt reveal" href="/portfolio#dining">
+    <a class="col-tile reveal" href="/portfolio#dining">
       <span class="col-img wipe"><img src="assets/portfolio/dining/06-s.jpg" width="735" height="649" alt="" loading="lazy" decoding="async"></span>
       <span class="col-meta"><span class="col-n">06</span><span class="col-name">Dining halls</span><span class="col-count">7</span></span>
     </a>
-    <a class="col-tile tilt reveal" href="/portfolio#kitchen">
+    <a class="col-tile reveal" href="/portfolio#kitchen">
       <span class="col-img wipe"><img src="assets/portfolio/kitchen/05-s.jpg" width="760" height="950" alt="" loading="lazy" decoding="async"></span>
       <span class="col-meta"><span class="col-n">07</span><span class="col-name">Kitchens</span><span class="col-count">6</span></span>
     </a>
-    <a class="col-tile tilt reveal" href="/portfolio#bedroom">
+    <a class="col-tile reveal" href="/portfolio#bedroom">
       <span class="col-img wipe"><img src="assets/portfolio/bedroom/06-s.jpg" width="760" height="760" alt="" loading="lazy" decoding="async"></span>
       <span class="col-meta"><span class="col-n">08</span><span class="col-name">Bedrooms</span><span class="col-count">9</span></span>
     </a>
-    <a class="col-tile tilt reveal" href="/portfolio#wardrobe">
+    <a class="col-tile reveal" href="/portfolio#wardrobe">
       <span class="col-img wipe"><img src="assets/portfolio/wardrobe/05-s.jpg" width="760" height="608" alt="" loading="lazy" decoding="async"></span>
       <span class="col-meta"><span class="col-n">09</span><span class="col-name">Wardrobe designs</span><span class="col-count">8</span></span>
     </a>
-    <a class="col-tile tilt reveal" href="/portfolio#tvunit">
+    <a class="col-tile reveal" href="/portfolio#tvunit">
       <span class="col-img wipe"><img src="assets/portfolio/tvunit/04-s.jpg" width="733" height="1100" alt="" loading="lazy" decoding="async"></span>
       <span class="col-meta"><span class="col-n">10</span><span class="col-name">TV units</span><span class="col-count">7</span></span>
     </a>
-    <a class="col-tile tilt reveal" href="/portfolio#restroom">
+    <a class="col-tile reveal" href="/portfolio#restroom">
       <span class="col-img wipe"><img src="assets/portfolio/restroom/02-s.jpg" width="733" height="1100" alt="" loading="lazy" decoding="async"></span>
       <span class="col-meta"><span class="col-n">11</span><span class="col-name">Restrooms</span><span class="col-count">6</span></span>
     </a>
-    <a class="col-tile tilt reveal" href="/portfolio#balcony">
+    <a class="col-tile reveal" href="/portfolio#balcony">
       <span class="col-img wipe"><img src="assets/portfolio/balcony/02-s.jpg" width="733" height="1100" alt="" loading="lazy" decoding="async"></span>
       <span class="col-meta"><span class="col-n">12</span><span class="col-name">Balconies &amp; landscaping</span><span class="col-count">4</span></span>
     </a>
@@ -262,32 +266,55 @@
 <!-- PORTFOLIO:END -->
 
 <!-- STORY -->
-<section class="story" id="studio">
-  <div class="story-media tilt reveal">
-    <div class="wipe"><img src="assets/images/ivory-architecture.jpg" alt="Sunlit courtyard entrance with an olive tree" loading="lazy"></div>
+<section class="story" id="studio" data-sound>
+  <div class="story-media reveal">
+    <div class="wipe"><img src="assets/images/ivory-architecture.jpg" alt="Sunlit courtyard entrance with an olive tree" loading="lazy" width="1672" height="941"></div>
     <img class="story-mono" src="assets/logo/monogram-beige.png" alt="">
   </div>
   <div class="story-text">
     <p class="eyebrow">Our story</p>
     <h2 class="h2">A beautiful space should never be hard to live in, or hard to create.</h2>
-    <p class="body">The name says it. <strong>LIVE</strong> is how people live and work in a space. <strong>EZE</strong> is ease: an effortless space and an effortless process. The double E stands for Elegance and Ease.</p>
-    <p class="body">Our monogram tells the same story: the upright is architecture and permanence, the swash is design and comfort, and the taper runs from structure to the finest detail.</p>
+    <p class="body">LIVEEZE was founded on a simple observation. Most clients who set out to build a home or a workplace end up managing a crowd: an architect, a designer, a contractor, a lighting specialist, a dozen suppliers. The vision gets diluted between them.</p>
+    <p class="body">We brought every discipline under one roof, so a single team carries each idea from the first sketch to the final key.</p>
     <p class="quote">You keep the joy of creating a space. We carry the complexity.</p>
   </div>
 </section>
 
+<section class="name-story" data-sound>
+  <div class="ns-item reveal"><span class="ns-k">LIVE</span><p>To live, to dwell. Every project begins with how people will live and work in a space, not with how it will look in a photograph.</p></div>
+  <div class="ns-item reveal"><span class="ns-k">EZE</span><p>Ease in two senses: a finished space that feels effortless, and a process that takes the weight off the client.</p></div>
+  <div class="ns-item reveal"><span class="ns-k">The double E</span><p>Where the two words meet stand our two standards: Elegance and Ease.</p></div>
+</section>
+
 <!-- TAGLINE BAND -->
-<section class="band">
+<section class="band" data-sound>
   <div class="band-media"><img src="assets/images/misty-forest.jpg" alt="" loading="lazy"></div>
   <div class="band-shade"></div>
   <div class="band-inner">
     <p class="tagline tagline-light tagline-lg">LIVE EXQUISITELY.</p>
-    <p class="band-note">Exquisite, from the Latin <em>exquisitus</em>: carefully sought out.</p>
+    <p class="band-note">Exquisite, from the Latin <em>exquisitus</em>: carefully sought out. Every material selected, every light placed, every detail considered on your behalf.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq" data-sound>
+  <div class="section-head">
+    <p class="eyebrow">Questions</p>
+    <h2 class="h2">Good to know.</h2>
+  </div>
+  <div class="faq-list">
+    <details><summary>What does LIVEEZE do?</summary><p>We are a full-service design and build studio. One team covers interior architecture, 3D visualisation, furniture, lighting, materials, landscape, contracting and turnkey delivery for residential and commercial spaces.</p></details>
+    <details><summary>Can I hire you for design only, or for a single service?</summary><p>Yes. You can choose one service, such as design, 3D visualisation, furniture or consulting, or let us take the whole project from concept to handover.</p></details>
+    <details><summary>Do you work on homes and on commercial spaces?</summary><p>Both. We design and build villas, homes and apartments, and commercial spaces including offices, restaurants, cafés, lobbies and building exteriors. You can browse each area in our <a href="/portfolio">portfolio</a>.</p></details>
+    <details><summary>Will I see my space before it is built?</summary><p>Yes. Our exterior and interior 3D visualisation shows your space photorealistically, so you can make decisions on layout, materials and lighting with confidence before work begins.</p></details>
+    <details><summary>How much does a project cost, and how long does it take?</summary><p>Every space is different. After the first consultation we prepare a proposal with the scope, budget and timeline for your project.</p></details>
+    <details><summary>Do you design outdoor spaces?</summary><p>Yes. Landscape planning covers gardens, balconies and terraces, with planting, paving, seating and outdoor lighting.</p></details>
+    <details><summary>How do we start?</summary><p>Send us an enquiry using the form below. We will reply to arrange a first consultation, where we listen to your needs before we draw anything.</p></details>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="contact" id="contact">
+<section class="contact" id="contact" data-sound>
   <div class="contact-text">
     <p class="eyebrow eyebrow-light">Contact</p>
     <h2 class="h2 h2-light">Begin your space.</h2>
@@ -295,15 +322,24 @@
     <ul class="contact-list">
       <li><span>Email</span><a href="mailto:info@liveeze.com">info@liveeze.com</a></li>
       <li><span>Projects</span>Residential and commercial</li>
+      <li><span>Services</span>Design, build and turnkey</li>
     </ul>
   </div>
   <form class="contact-form" novalidate>
-    <div class="field"><input type="text" id="f-name" name="name" required placeholder=" " autocomplete="name"><label for="f-name">Name</label></div>
-    <div class="field"><input type="email" id="f-email" name="email" required placeholder=" " autocomplete="email"><label for="f-email">Email</label></div>
+    <div class="field-row">
+      <div class="field"><input type="text" id="f-name" name="name" required placeholder=" " autocomplete="name"><label for="f-name">Name *</label></div>
+      <div class="field"><input type="email" id="f-email" name="email" required placeholder=" " autocomplete="email" inputmode="email"><label for="f-email">Email *</label></div>
+    </div>
+    <div class="field-row">
+      <div class="field"><input type="tel" id="f-phone" name="phone" placeholder=" " autocomplete="tel" inputmode="tel"><label for="f-phone">Phone</label></div>
+      <div class="field"><input type="text" id="f-loc" name="location" placeholder=" " autocomplete="address-level2"><label for="f-loc">Project location</label></div>
+    </div>
     <fieldset class="chips">
       <legend>Project type</legend>
       <label><input type="radio" name="type" value="Residential" checked><span>Residential</span></label>
       <label><input type="radio" name="type" value="Commercial"><span>Commercial</span></label>
+      <label><input type="radio" name="type" value="Hospitality"><span>Hospitality</span></label>
+      <label><input type="radio" name="type" value="Office"><span>Office</span></label>
       <label><input type="radio" name="type" value="Landscape"><span>Landscape</span></label>
       <label><input type="radio" name="type" value="Consultation"><span>Consultation</span></label>
     </fieldset>
@@ -316,16 +352,34 @@
 </main>
 
 <footer class="footer">
-  <img class="footer-mono" src="assets/logo/monogram-charcoal.png" alt="LIVEEZE monogram">
-  <p class="tagline">LIVE EXQUISITELY.</p>
-  <nav class="footer-nav" aria-label="Footer">
-    <a href="#services">Services</a><a href="#process">Process</a><a href="/portfolio">Portfolio</a><a href="#studio">Studio</a><a href="#contact">Contact</a>
-  </nav>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img class="footer-mark" src="assets/logo/wordmark-charcoal.png" alt="LIVEEZE" width="180" height="26">
+      <p class="tagline">LIVE EXQUISITELY.</p>
+      <p class="footer-about">A full-service design and build studio for residential and commercial spaces. One team from first sketch to final key.</p>
+    </div>
+    <nav class="footer-col" aria-label="Studio">
+      <p class="footer-h">Studio</p>
+      <a href="/#services">Services</a><a href="/#process">Process</a><a href="/#studio">Our story</a><a href="/#faq">FAQ</a><a href="/#contact">Contact</a>
+    </nav>
+    <nav class="footer-col" aria-label="Portfolio">
+      <p class="footer-h">Portfolio</p>
+      <a href="/portfolio#residence">Residence exteriors</a><a href="/portfolio#commercial">Commercial buildings</a><a href="/portfolio#hospitality">Hospitality</a><a href="/portfolio#office">Offices</a><a href="/portfolio#living">Interiors</a><a href="/portfolio#balcony">Landscaping</a>
+    </nav>
+    <div class="footer-col">
+      <p class="footer-h">Contact</p>
+      <a href="mailto:info@liveeze.com">info@liveeze.com</a>
+      <a href="/#contact">Start a project</a>
+    </div>
+  </div>
   <div class="footer-row">
-    <span>© <span id="year">2026</span> LIVEEZE</span>
-    <a href="https://www.liveeze.com">liveeze.com</a>
+    <span>© <span id="year">2026</span> LIVEEZE. All rights reserved.</span>
+    <a href="/privacy">Privacy</a>
   </div>
 </footer>
+
+<a href="#contact" class="fab-cta" aria-label="Start a project">Start a project</a>
+<button class="to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg></button>
 
 <script src="main.js" defer></script>
 </body>

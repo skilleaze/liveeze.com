@@ -2,14 +2,26 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Portfolio · LIVEEZE</title>
 <meta name="description" content="The LIVEEZE portfolio: 105 designs across residence and commercial exteriors, hospitality, offices, living rooms, dining, kitchens, bedrooms, wardrobes, TV units, restrooms and balconies.">
+<link rel="canonical" href="https://www.liveeze.com/portfolio">
 <meta name="theme-color" content="#282822">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LIVEEZE">
 <meta property="og:title" content="Portfolio · LIVEEZE">
-<meta property="og:description" content="105 designs across twelve collections, from façades to the finest joinery.">
-<meta property="og:image" content="https://www.liveeze.com/assets/portfolio/residence/06.jpg">
-<link rel="icon" type="image/png" href="assets/logo/monogram-charcoal.png">
+<meta property="og:description" content="105 designs across twelve collections, from building façades to the finest joinery.">
+<meta property="og:url" content="https://www.liveeze.com/portfolio">
+<meta property="og:image" content="https://www.liveeze.com/assets/og-portfolio.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Portfolio · LIVEEZE">
+<meta name="twitter:image" content="https://www.liveeze.com/assets/og-portfolio.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600&display=swap">
@@ -17,8 +29,7 @@
 <script>document.documentElement.classList.add('js','page-portfolio')</script>
 </head>
 <body>
-
-<div class="cursor" aria-hidden="true"><span class="cursor-ring"></span><span class="cursor-dot"></span></div>
+<a class="skip" href="#main">Skip to content</a>
 
 <header class="site-header" id="top">
   <a href="/" class="brand" aria-label="LIVEEZE home">
@@ -30,23 +41,24 @@
     <a href="/#process">Process</a>
     <a href="/portfolio" class="is-current" aria-current="page">Portfolio</a>
     <a href="/#studio">Studio</a>
+    <a href="/#faq">FAQ</a>
     <a href="/#contact" class="nav-cta">Start a project</a>
   </nav>
   <div class="header-tools">
-    <button class="sound-btn" aria-pressed="false" aria-label="Turn sound on">
+    <button class="sound-btn" type="button" aria-pressed="false" aria-label="Sound">
       <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
       <span class="sound-label">Sound</span>
     </button>
-    <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
   </div>
 </header>
 
-<main>
-<section class="pf-hero">
+<main id="main">
+<section class="pf-hero" data-sound>
   <div class="pf-hero-media"><img src="assets/portfolio/residence/06.jpg" alt=""></div>
   <div class="pf-hero-shade"></div>
   <div class="pf-hero-inner">
-    <p class="eyebrow eyebrow-light">Portfolio</p>
+    <p class="crumbs"><a href="/">Home</a> / Portfolio</p>
     <h1 class="pf-title">Design collections.</h1>
     <p class="hero-lead">105 designs across twelve collections, from building façades to the finest joinery. Choose a collection, or open any design to view it full screen.</p>
   </div>
@@ -59,7 +71,7 @@
 </div>
 
 <div class="pf-sets">
-<section class="pf-set" id="residence" data-cat="residence">
+<section class="pf-set" id="residence" data-cat="residence" data-sound>
   <div class="pf-set-head">
     <span class="pf-n">01</span>
     <div>
@@ -90,7 +102,7 @@
 <figure class="pf-item reveal" data-cat="residence"><button class="pf-open" data-full="assets/portfolio/residence/18.jpg" data-caption="Residence exteriors · 18" aria-label="View Residence exteriors, design 18 larger"><img src="assets/portfolio/residence/18-s.jpg" width="760" height="725" alt="Residence exteriors, design 18" loading="lazy" decoding="async"></button></figure>
 <figure class="pf-item reveal" data-cat="residence"><button class="pf-open" data-full="assets/portfolio/residence/19.jpg" data-caption="Residence exteriors · 19" aria-label="View Residence exteriors, design 19 larger"><img src="assets/portfolio/residence/19-s.jpg" width="736" height="736" alt="Residence exteriors, design 19" loading="lazy" decoding="async"></button></figure>
   </div>
-</section><section class="pf-set" id="commercial" data-cat="commercial">
+</section><section class="pf-set" id="commercial" data-cat="commercial" data-sound>
   <div class="pf-set-head">
     <span class="pf-n">02</span>
     <div>
@@ -110,7 +122,7 @@
 <figure class="pf-item reveal" data-cat="commercial"><button class="pf-open" data-full="assets/portfolio/commercial/07.jpg" data-caption="Commercial building exteriors · 07" aria-label="View Commercial building exteriors, design 07 larger"><img src="assets/portfolio/commercial/07-s.jpg" width="760" height="1013" alt="Commercial building exteriors, design 07" loading="lazy" decoding="async"></button></figure>
 <figure class="pf-item reveal" data-cat="commercial"><button class="pf-open" data-full="assets/portfolio/commercial/08.jpg" data-caption="Commercial building exteriors · 08" aria-label="View Commercial building exteriors, design 08 larger"><img src="assets/portfolio/commercial/08-s.jpg" width="760" height="760" alt="Commercial building exteriors, design 08" loading="lazy" decoding="async"></button></figure>
   </div>
-</section><section class="pf-set" id="hospitality" data-cat="hospitality">
+</section><section class="pf-set" id="hospitality" data-cat="hospitality" data-sound>
   <div class="pf-set-head">
     <span class="pf-n">03</span>
     <div>
@@ -130,7 +142,7 @@
 <figure class="pf-item reveal" data-cat="hospitality"><button class="pf-open" data-full="assets/portfolio/hospitality/07.jpg" data-caption="Hospitality · 07" aria-label="View Hospitality, design 07 larger"><img src="assets/portfolio/hospitality/07-s.jpg" width="760" height="950" alt="Hospitality, design 07" loading="lazy" decoding="async"></button></figure>
 <figure class="pf-item reveal" data-cat="hospitality"><button class="pf-open" data-full="assets/portfolio/hospitality/08.jpg" data-caption="Hospitality · 08" aria-label="View Hospitality, design 08 larger"><img src="assets/portfolio/hospitality/08-s.jpg" width="747" height="747" alt="Hospitality, design 08" loading="lazy" decoding="async"></button></figure>
   </div>
-</section><section class="pf-set" id="office" data-cat="office">
+</section><section class="pf-set" id="office" data-cat="office" data-sound>
   <div class="pf-set-head">
     <span class="pf-n">04</span>
     <div>
@@ -157,7 +169,7 @@
 <figure class="pf-item reveal" data-cat="office"><button class="pf-open" data-full="assets/portfolio/office/14.jpg" data-caption="Office designs · 14" aria-label="View Office designs, design 14 larger"><img src="assets/portfolio/office/14-s.jpg" width="733" height="1100" alt="Office designs, design 14" loading="lazy" decoding="async"></button></figure>
 <figure class="pf-item reveal" data-cat="office"><button class="pf-open" data-full="assets/portfolio/office/15.jpg" data-caption="Office designs · 15" aria-label="View Office designs, design 15 larger"><img src="assets/portfolio/office/15-s.jpg" width="733" height="1100" alt="Office designs, design 15" loading="lazy" decoding="async"></button></figure>
   </div>
-</section><section class="pf-set" id="living" data-cat="living">
+</section><section class="pf-set" id="living" data-cat="living" data-sound>
   <div class="pf-set-head">
     <span class="pf-n">05</span>
     <div>
@@ -177,7 +189,7 @@
 <figure class="pf-item reveal" data-cat="living"><button class="pf-open" data-full="assets/portfolio/living/07.jpg" data-caption="Living rooms · 07" aria-label="View Living rooms, design 07 larger"><img src="assets/portfolio/living/07-s.jpg" width="658" height="751" alt="Living rooms, design 07" loading="lazy" decoding="async"></button></figure>
 <figure class="pf-item reveal" data-cat="living"><button class="pf-open" data-full="assets/portfolio/living/08.jpg" data-caption="Living rooms · 08" aria-label="View Living rooms, design 08 larger"><img src="assets/portfolio/living/08-s.jpg" width="736" height="668" alt="Living rooms, design 08" loading="lazy" decoding="async"></button></figure>
   </div>
-</section><section class="pf-set" id="dining" data-cat="dining">
+</section><section class="pf-set" id="dining" data-cat="dining" data-sound>
   <div class="pf-set-head">
     <span class="pf-n">06</span>
     <div>
@@ -196,7 +208,7 @@
 <figure class="pf-item reveal" data-cat="dining"><button class="pf-open" data-full="assets/portfolio/dining/06.jpg" data-caption="Dining halls · 06" aria-label="View Dining halls, design 06 larger"><img src="assets/portfolio/dining/06-s.jpg" width="735" height="649" alt="Dining halls, design 06" loading="lazy" decoding="async"></button></figure>
 <figure class="pf-item reveal" data-cat="dining"><button class="pf-open" data-full="assets/portfolio/dining/07.jpg" data-caption="Dining halls · 07" aria-label="View Dining halls, design 07 larger"><img src="assets/portfolio/dining/07-s.jpg" width="760" height="1013" alt="Dining halls, design 07" loading="lazy" decoding="async"></button></figure>
   </div>
-</section><section class="pf-set" id="kitchen" data-cat="kitchen">
+</section><section class="pf-set" id="kitchen" data-cat="kitchen" data-sound>
   <div class="pf-set-head">
     <span class="pf-n">07</span>
     <div>
@@ -214,7 +226,7 @@
 <figure class="pf-item reveal" data-cat="kitchen"><button class="pf-open" data-full="assets/portfolio/kitchen/05.jpg" data-caption="Kitchens · 05" aria-label="View Kitchens, design 05 larger"><img src="assets/portfolio/kitchen/05-s.jpg" width="760" height="950" alt="Kitchens, design 05" loading="lazy" decoding="async"></button></figure>
 <figure class="pf-item reveal" data-cat="kitchen"><button class="pf-open" data-full="assets/portfolio/kitchen/06.jpg" data-caption="Kitchens · 06" aria-label="View Kitchens, design 06 larger"><img src="assets/portfolio/kitchen/06-s.jpg" width="760" height="910" alt="Kitchens, design 06" loading="lazy" decoding="async"></button></figure>
   </div>
-</section><section class="pf-set" id="bedroom" data-cat="bedroom">
+</section><section class="pf-set" id="bedroom" data-cat="bedroom" data-sound>
   <div class="pf-set-head">
     <span class="pf-n">08</span>
     <div>
@@ -235,7 +247,7 @@
 <figure class="pf-item reveal" data-cat="bedroom"><button class="pf-open" data-full="assets/portfolio/bedroom/08.jpg" data-caption="Bedrooms · 08" aria-label="View Bedrooms, design 08 larger"><img src="assets/portfolio/bedroom/08-s.jpg" width="760" height="950" alt="Bedrooms, design 08" loading="lazy" decoding="async"></button></figure>
 <figure class="pf-item reveal" data-cat="bedroom"><button class="pf-open" data-full="assets/portfolio/bedroom/09.jpg" data-caption="Bedrooms · 09" aria-label="View Bedrooms, design 09 larger"><img src="assets/portfolio/bedroom/09-s.jpg" width="760" height="760" alt="Bedrooms, design 09" loading="lazy" decoding="async"></button></figure>
   </div>
-</section><section class="pf-set" id="wardrobe" data-cat="wardrobe">
+</section><section class="pf-set" id="wardrobe" data-cat="wardrobe" data-sound>
   <div class="pf-set-head">
     <span class="pf-n">09</span>
     <div>
@@ -255,7 +267,7 @@
 <figure class="pf-item reveal" data-cat="wardrobe"><button class="pf-open" data-full="assets/portfolio/wardrobe/07.jpg" data-caption="Wardrobe designs · 07" aria-label="View Wardrobe designs, design 07 larger"><img src="assets/portfolio/wardrobe/07-s.jpg" width="733" height="1100" alt="Wardrobe designs, design 07" loading="lazy" decoding="async"></button></figure>
 <figure class="pf-item reveal" data-cat="wardrobe"><button class="pf-open" data-full="assets/portfolio/wardrobe/08.jpg" data-caption="Wardrobe designs · 08" aria-label="View Wardrobe designs, design 08 larger"><img src="assets/portfolio/wardrobe/08-s.jpg" width="736" height="920" alt="Wardrobe designs, design 08" loading="lazy" decoding="async"></button></figure>
   </div>
-</section><section class="pf-set" id="tvunit" data-cat="tvunit">
+</section><section class="pf-set" id="tvunit" data-cat="tvunit" data-sound>
   <div class="pf-set-head">
     <span class="pf-n">10</span>
     <div>
@@ -274,7 +286,7 @@
 <figure class="pf-item reveal" data-cat="tvunit"><button class="pf-open" data-full="assets/portfolio/tvunit/06.jpg" data-caption="TV units · 06" aria-label="View TV units, design 06 larger"><img src="assets/portfolio/tvunit/06-s.jpg" width="736" height="589" alt="TV units, design 06" loading="lazy" decoding="async"></button></figure>
 <figure class="pf-item reveal" data-cat="tvunit"><button class="pf-open" data-full="assets/portfolio/tvunit/07.jpg" data-caption="TV units · 07" aria-label="View TV units, design 07 larger"><img src="assets/portfolio/tvunit/07-s.jpg" width="760" height="760" alt="TV units, design 07" loading="lazy" decoding="async"></button></figure>
   </div>
-</section><section class="pf-set" id="restroom" data-cat="restroom">
+</section><section class="pf-set" id="restroom" data-cat="restroom" data-sound>
   <div class="pf-set-head">
     <span class="pf-n">11</span>
     <div>
@@ -292,7 +304,7 @@
 <figure class="pf-item reveal" data-cat="restroom"><button class="pf-open" data-full="assets/portfolio/restroom/05.jpg" data-caption="Restrooms · 05" aria-label="View Restrooms, design 05 larger"><img src="assets/portfolio/restroom/05-s.jpg" width="734" height="1100" alt="Restrooms, design 05" loading="lazy" decoding="async"></button></figure>
 <figure class="pf-item reveal" data-cat="restroom"><button class="pf-open" data-full="assets/portfolio/restroom/06.jpg" data-caption="Restrooms · 06" aria-label="View Restrooms, design 06 larger"><img src="assets/portfolio/restroom/06-s.jpg" width="734" height="1100" alt="Restrooms, design 06" loading="lazy" decoding="async"></button></figure>
   </div>
-</section><section class="pf-set" id="balcony" data-cat="balcony">
+</section><section class="pf-set" id="balcony" data-cat="balcony" data-sound>
   <div class="pf-set-head">
     <span class="pf-n">12</span>
     <div>
@@ -311,7 +323,7 @@
 </section>
 </div>
 
-<section class="pf-cta">
+<section class="pf-cta" data-sound>
   <p class="eyebrow eyebrow-light">Your space</p>
   <h2 class="h2 h2-light">Begin your space.</h2>
   <p class="body body-light">Tell us which collection speaks to you. We will shape it around how you live and work.</p>
@@ -328,16 +340,34 @@
 </div>
 
 <footer class="footer">
-  <img class="footer-mono" src="assets/logo/monogram-charcoal.png" alt="LIVEEZE monogram">
-  <p class="tagline">LIVE EXQUISITELY.</p>
-  <nav class="footer-nav" aria-label="Footer">
-    <a href="/#services">Services</a><a href="/#process">Process</a><a href="/portfolio">Portfolio</a><a href="/#studio">Studio</a><a href="/#contact">Contact</a>
-  </nav>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img class="footer-mark" src="assets/logo/wordmark-charcoal.png" alt="LIVEEZE" width="180" height="26">
+      <p class="tagline">LIVE EXQUISITELY.</p>
+      <p class="footer-about">A full-service design and build studio for residential and commercial spaces. One team from first sketch to final key.</p>
+    </div>
+    <nav class="footer-col" aria-label="Studio">
+      <p class="footer-h">Studio</p>
+      <a href="/#services">Services</a><a href="/#process">Process</a><a href="/#studio">Our story</a><a href="/#faq">FAQ</a><a href="/#contact">Contact</a>
+    </nav>
+    <nav class="footer-col" aria-label="Portfolio">
+      <p class="footer-h">Portfolio</p>
+      <a href="/portfolio#residence">Residence exteriors</a><a href="/portfolio#commercial">Commercial buildings</a><a href="/portfolio#hospitality">Hospitality</a><a href="/portfolio#office">Offices</a><a href="/portfolio#living">Interiors</a><a href="/portfolio#balcony">Landscaping</a>
+    </nav>
+    <div class="footer-col">
+      <p class="footer-h">Contact</p>
+      <a href="mailto:info@liveeze.com">info@liveeze.com</a>
+      <a href="/#contact">Start a project</a>
+    </div>
+  </div>
   <div class="footer-row">
-    <span>© <span id="year">2026</span> LIVEEZE</span>
-    <a href="https://www.liveeze.com">liveeze.com</a>
+    <span>© <span id="year">2026</span> LIVEEZE. All rights reserved.</span>
+    <a href="/privacy">Privacy</a>
   </div>
 </footer>
+
+<a href="/#contact" class="fab-cta" aria-label="Start a project">Start a project</a>
+<button class="to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg></button>
 
 <script src="main.js" defer></script>
 </body>
