@@ -1,6 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.liveeze.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.liveeze.com/portfolio</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.liveeze.com/privacy</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.liveeze.com/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <image:image><image:loc>https://www.liveeze.com/assets/images/hero-staircase.jpg</image:loc><image:title>Curved forest-green staircase lit by a skylight</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/images/ivory-architecture.jpg</image:loc><image:title>Ivory plaster courtyard with an olive tree</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/images/natural-materials.jpg</image:loc><image:title>Travertine, green marble, oak and linen samples</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/images/courtyard-living.jpg</image:loc><image:title>Courtyard living room in warm evening light</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.liveeze.com/portfolio</loc>
+    <lastmod>2026-11-25</lastmod>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/01.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 01</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/02.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 02</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/03.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 03</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/04.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 04</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/05.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 05</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/06.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 06</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/07.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 07</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/08.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 08</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/09.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 09</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/10.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 10</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/11.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 11</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/12.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 12</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/13.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 13</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/14.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 14</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/15.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 15</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/16.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 16</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/17.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 17</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/18.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 18</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/19.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 19</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/commercial/01.jpg</image:loc><image:title>Commercial building exterior design by LIVEEZE, 01</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/commercial/02.jpg</image:loc><image:title>Commercial building exterior design by LIVEEZE, 02</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/commercial/03.jpg</image:loc><image:title>Commercial building exterior design by LIVEEZE, 03</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/commercial/04.jpg</image:loc><image:title>Commercial building exterior design by LIVEEZE, 04</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/commercial/05.jpg</image:loc><image:title>Commercial building exterior design by LIVEEZE, 05</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/commercial/06.jpg</image:loc><image:title>Commercial building exterior design by LIVEEZE, 06</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/commercial/07.jpg</image:loc><image:title>Commercial building exterior design by LIVEEZE, 07</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/commercial/08.jpg</image:loc><image:title>Commercial building exterior design by LIVEEZE, 08</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/hospitality/01.jpg</image:loc><image:title>Hospitality interior design by LIVEEZE, 01</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/hospitality/02.jpg</image:loc><image:title>Hospitality interior design by LIVEEZE, 02</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/hospitality/03.jpg</image:loc><image:title>Hospitality interior design by LIVEEZE, 03</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/hospitality/04.jpg</image:loc><image:title>Hospitality interior design by LIVEEZE, 04</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/hospitality/05.jpg</image:loc><image:title>Hospitality interior design by LIVEEZE, 05</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/hospitality/06.jpg</image:loc><image:title>Hospitality interior design by LIVEEZE, 06</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/hospitality/07.jpg</image:loc><image:title>Hospitality interior design by LIVEEZE, 07</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/hospitality/08.jpg</image:loc><image:title>Hospitality interior design by LIVEEZE, 08</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/office/01.jpg</image:loc><image:title>Office interior design by LIVEEZE, 01</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/office/02.jpg</image:loc><image:title>Office interior design by LIVEEZE, 02</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/office/03.jpg</image:loc><image:title>Office interior design by LIVEEZE, 03</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/office/04.jpg</image:loc><image:title>Office interior design by LIVEEZE, 04</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/office/05.jpg</image:loc><image:title>Office interior design by LIVEEZE, 05</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/office/06.jpg</image:loc><image:title>Office interior design by LIVEEZE, 06</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/office/07.jpg</image:loc><image:title>Office interior design by LIVEEZE, 07</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/office/08.jpg</image:loc><image:title>Office interior design by LIVEEZE, 08</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/office/09.jpg</image:loc><image:title>Office interior design by LIVEEZE, 09</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/office/10.jpg</image:loc><image:title>Office interior design by LIVEEZE, 10</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/office/11.jpg</image:loc><image:title>Office interior design by LIVEEZE, 11</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/office/12.jpg</image:loc><image:title>Office interior design by LIVEEZE, 12</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/office/13.jpg</image:loc><image:title>Office interior design by LIVEEZE, 13</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/office/14.jpg</image:loc><image:title>Office interior design by LIVEEZE, 14</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/office/15.jpg</image:loc><image:title>Office interior design by LIVEEZE, 15</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/living/01.jpg</image:loc><image:title>Living room interior design by LIVEEZE, 01</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/living/02.jpg</image:loc><image:title>Living room interior design by LIVEEZE, 02</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/living/03.jpg</image:loc><image:title>Living room interior design by LIVEEZE, 03</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/living/04.jpg</image:loc><image:title>Living room interior design by LIVEEZE, 04</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/living/05.jpg</image:loc><image:title>Living room interior design by LIVEEZE, 05</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/living/06.jpg</image:loc><image:title>Living room interior design by LIVEEZE, 06</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/living/07.jpg</image:loc><image:title>Living room interior design by LIVEEZE, 07</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/living/08.jpg</image:loc><image:title>Living room interior design by LIVEEZE, 08</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/dining/01.jpg</image:loc><image:title>Dining room interior design by LIVEEZE, 01</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/dining/02.jpg</image:loc><image:title>Dining room interior design by LIVEEZE, 02</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/dining/03.jpg</image:loc><image:title>Dining room interior design by LIVEEZE, 03</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/dining/04.jpg</image:loc><image:title>Dining room interior design by LIVEEZE, 04</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/dining/05.jpg</image:loc><image:title>Dining room interior design by LIVEEZE, 05</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/dining/06.jpg</image:loc><image:title>Dining room interior design by LIVEEZE, 06</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/dining/07.jpg</image:loc><image:title>Dining room interior design by LIVEEZE, 07</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/kitchen/01.jpg</image:loc><image:title>Kitchen interior design by LIVEEZE, 01</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/kitchen/02.jpg</image:loc><image:title>Kitchen interior design by LIVEEZE, 02</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/kitchen/03.jpg</image:loc><image:title>Kitchen interior design by LIVEEZE, 03</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/kitchen/04.jpg</image:loc><image:title>Kitchen interior design by LIVEEZE, 04</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/kitchen/05.jpg</image:loc><image:title>Kitchen interior design by LIVEEZE, 05</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/kitchen/06.jpg</image:loc><image:title>Kitchen interior design by LIVEEZE, 06</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/bedroom/01.jpg</image:loc><image:title>Bedroom interior design by LIVEEZE, 01</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/bedroom/02.jpg</image:loc><image:title>Bedroom interior design by LIVEEZE, 02</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/bedroom/03.jpg</image:loc><image:title>Bedroom interior design by LIVEEZE, 03</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/bedroom/04.jpg</image:loc><image:title>Bedroom interior design by LIVEEZE, 04</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/bedroom/05.jpg</image:loc><image:title>Bedroom interior design by LIVEEZE, 05</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/bedroom/06.jpg</image:loc><image:title>Bedroom interior design by LIVEEZE, 06</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/bedroom/07.jpg</image:loc><image:title>Bedroom interior design by LIVEEZE, 07</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/bedroom/08.jpg</image:loc><image:title>Bedroom interior design by LIVEEZE, 08</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/bedroom/09.jpg</image:loc><image:title>Bedroom interior design by LIVEEZE, 09</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/wardrobe/01.jpg</image:loc><image:title>Wardrobe design by LIVEEZE, 01</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/wardrobe/02.jpg</image:loc><image:title>Wardrobe design by LIVEEZE, 02</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/wardrobe/03.jpg</image:loc><image:title>Wardrobe design by LIVEEZE, 03</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/wardrobe/04.jpg</image:loc><image:title>Wardrobe design by LIVEEZE, 04</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/wardrobe/05.jpg</image:loc><image:title>Wardrobe design by LIVEEZE, 05</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/wardrobe/06.jpg</image:loc><image:title>Wardrobe design by LIVEEZE, 06</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/wardrobe/07.jpg</image:loc><image:title>Wardrobe design by LIVEEZE, 07</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/wardrobe/08.jpg</image:loc><image:title>Wardrobe design by LIVEEZE, 08</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/tvunit/01.jpg</image:loc><image:title>TV unit design by LIVEEZE, 01</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/tvunit/02.jpg</image:loc><image:title>TV unit design by LIVEEZE, 02</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/tvunit/03.jpg</image:loc><image:title>TV unit design by LIVEEZE, 03</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/tvunit/04.jpg</image:loc><image:title>TV unit design by LIVEEZE, 04</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/tvunit/05.jpg</image:loc><image:title>TV unit design by LIVEEZE, 05</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/tvunit/06.jpg</image:loc><image:title>TV unit design by LIVEEZE, 06</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/tvunit/07.jpg</image:loc><image:title>TV unit design by LIVEEZE, 07</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/restroom/01.jpg</image:loc><image:title>Bathroom and restroom design by LIVEEZE, 01</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/restroom/02.jpg</image:loc><image:title>Bathroom and restroom design by LIVEEZE, 02</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/restroom/03.jpg</image:loc><image:title>Bathroom and restroom design by LIVEEZE, 03</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/restroom/04.jpg</image:loc><image:title>Bathroom and restroom design by LIVEEZE, 04</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/restroom/05.jpg</image:loc><image:title>Bathroom and restroom design by LIVEEZE, 05</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/restroom/06.jpg</image:loc><image:title>Bathroom and restroom design by LIVEEZE, 06</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/balcony/01.jpg</image:loc><image:title>Balcony and landscape design by LIVEEZE, 01</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/balcony/02.jpg</image:loc><image:title>Balcony and landscape design by LIVEEZE, 02</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/balcony/03.jpg</image:loc><image:title>Balcony and landscape design by LIVEEZE, 03</image:title></image:image>
+    <image:image><image:loc>https://www.liveeze.com/assets/portfolio/balcony/04.jpg</image:loc><image:title>Balcony and landscape design by LIVEEZE, 04</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://www.liveeze.com/privacy</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
 </urlset>
