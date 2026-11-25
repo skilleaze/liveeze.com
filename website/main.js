@@ -16,7 +16,9 @@
      ===================================================== */
   const Sound = (() => {
     const AC = window.AudioContext || window.webkitAudioContext;
-    let ctx = null, master = null, noiseBuf = null, amb = null, air = null, on = false, lastHover = 0, lastTap = 0;
+    let ctx = null, out = null, dry = null, wet = null, amb = null, on = false, lastHover = 0, lastClick = 0;
+    // Pentatonic notes in A: soft, consonant, never clash with each other
+    const SCALE = [440, 493.88, 554.37, 659.25, 739.99, 880, 987.77, 1108.73];
 
     function silentWavUrl() {
       const n = 800, buf = new ArrayBuffer(44 + n * 2), v = new DataView(buf);
@@ -27,84 +29,83 @@
       w(36, 'data'); v.setUint32(40, n * 2, true);
       return URL.createObjectURL(new Blob([buf], { type: 'audio/wav' }));
     }
+    function makeHall(seconds) {
+      // Soft room reverb: decaying stereo noise impulse, darkened at the tail
+      const rate = ctx.sampleRate, len = Math.floor(rate * seconds), ir = ctx.createBuffer(2, len, rate);
+      for (let ch = 0; ch < 2; ch++) {
+        const d = ir.getChannelData(ch); let lp = 0;
+        for (let i = 0; i < len; i++) { const t = i / len; lp += ((Math.random() * 2 - 1) - lp) * (0.5 - t * 0.42); d[i] = lp * Math.pow(1 - t, 3.2); }
+      }
+      const conv = ctx.createConvolver(); conv.buffer = ir; return conv;
+    }
     function init() {
       if (ctx) return true;
       if (!AC) return false;
       try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) {}
       ctx = new AC();
-      master = ctx.createGain(); master.gain.value = 1; master.connect(ctx.destination);
-      noiseBuf = ctx.createBuffer(1, ctx.sampleRate * 2, ctx.sampleRate);
-      const d = noiseBuf.getChannelData(0);
-      for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+      out = ctx.createGain(); out.gain.value = 0.9;
+      const comp = ctx.createDynamicsCompressor(); comp.threshold.value = -22; comp.ratio.value = 3;
+      out.connect(comp); comp.connect(ctx.destination);
+      dry = ctx.createGain(); dry.gain.value = 0.75; dry.connect(out);
+      const hall = makeHall(2.8); wet = ctx.createGain(); wet.gain.value = 0.42;
+      wet.connect(hall); hall.connect(out);
       return true;
     }
     function unlockMedia() {
-      // iPhone: playing a media element moves audio to the "playback" channel,
-      // so Web Audio is heard even when the ring/silent switch is on.
+      // iPhone: a media element moves audio to the playback channel so it is heard with the silent switch on.
       try { const a = new Audio(silentWavUrl()); a.setAttribute('playsinline', ''); a.volume = 0.01; const p = a.play(); if (p) p.catch(() => {}); } catch (e) {}
     }
-    function env(g, t, a, peak, rel) {
-      g.gain.setValueAtTime(0.0001, t);
-      g.gain.exponentialRampToValueAtTime(peak, t + a);
-      g.gain.exponentialRampToValueAtTime(0.0001, t + a + rel);
-    }
-    function tone(freq, { type = 'sine', peak = 0.04, a = 0.008, rel = 0.25, to = null, delay = 0 } = {}) {
-      const t = ctx.currentTime + delay, o = ctx.createOscillator(), g = ctx.createGain();
-      o.type = type; o.frequency.setValueAtTime(freq, t);
-      if (to) o.frequency.exponentialRampToValueAtTime(to, t + a + rel);
-      env(g, t, a, peak, rel); o.connect(g); g.connect(master); o.start(t); o.stop(t + a + rel + 0.05);
-    }
-    function noise({ peak = 0.04, a = 0.02, rel = 0.3, type = 'bandpass', f1 = 600, f2 = 1800, q = 0.8 } = {}) {
-      const t = ctx.currentTime, s = ctx.createBufferSource(); s.buffer = noiseBuf;
-      const f = ctx.createBiquadFilter(); f.type = type; f.Q.value = q;
-      f.frequency.setValueAtTime(f1, t); f.frequency.exponentialRampToValueAtTime(f2, t + a + rel);
-      const g = ctx.createGain(); env(g, t, a, peak, rel);
-      s.connect(f); f.connect(g); g.connect(master); s.start(t); s.stop(t + a + rel + 0.05);
-    }
-    function startBeds() {
-      if (amb) return;
-      const t = ctx.currentTime;
-      // warm ambient chord
-      const out = ctx.createGain(); out.gain.setValueAtTime(0.0001, t); out.gain.exponentialRampToValueAtTime(0.045, t + 2.5);
-      const lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 760; lp.Q.value = 0.4;
-      const lfo = ctx.createOscillator(), lfoG = ctx.createGain(); lfo.frequency.value = 0.07; lfoG.gain.value = 240;
-      lfo.connect(lfoG); lfoG.connect(lp.frequency); lfo.start();
-      const oscs = [110, 164.81, 220, 277.18, 329.63].map((f, i) => {
-        const o = ctx.createOscillator(); o.type = i % 2 ? 'sine' : 'triangle'; o.frequency.value = f; o.detune.value = (i - 2) * 4;
-        const g = ctx.createGain(); g.gain.value = i === 0 ? 0.5 : 0.22; o.connect(g); g.connect(lp); o.start(); return o;
+    // A soft, bell-like note: sine body with a quiet octave and fifth, fast attack, long gentle decay
+    function bell(freq, { peak = 0.05, decay = 1.6, delay = 0, bright = 1 } = {}) {
+      const t = ctx.currentTime + delay;
+      [[1, 1], [2, 0.18 * bright], [3, 0.05 * bright]].filter(([, amt]) => amt > 0).forEach(([mult, amt]) => {
+        const o = ctx.createOscillator(), g = ctx.createGain();
+        o.type = 'sine'; o.frequency.value = freq * mult;
+        const d = decay / mult;
+        g.gain.setValueAtTime(0.0001, t);
+        g.gain.exponentialRampToValueAtTime(peak * amt, t + 0.012);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + d);
+        o.connect(g); g.connect(dry); g.connect(wet); o.start(t); o.stop(t + d + 0.05);
       });
-      lp.connect(out); out.connect(master);
-      // soft "air" that rises with scrolling
-      const src = ctx.createBufferSource(); src.buffer = noiseBuf; src.loop = true;
-      const bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = 900; bp.Q.value = 0.7;
-      const ag = ctx.createGain(); ag.gain.value = 0;
-      src.connect(bp); bp.connect(ag); ag.connect(master); src.start();
-      air = { gain: ag.gain, filter: bp.frequency };
+    }
+    function startAmbient() {
+      if (amb) return;
+      // Very quiet, slow-moving warm chord (A major 9) that sits far in the background
+      const t = ctx.currentTime, bus = ctx.createGain();
+      bus.gain.setValueAtTime(0.0001, t); bus.gain.exponentialRampToValueAtTime(0.028, t + 4);
+      const lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 620; lp.Q.value = 0.3;
+      const lfo = ctx.createOscillator(), lfoG = ctx.createGain(); lfo.frequency.value = 0.05; lfoG.gain.value = 140;
+      lfo.connect(lfoG); lfoG.connect(lp.frequency); lfo.start();
+      const oscs = [110, 164.81, 277.18, 246.94].map((f, i) => {
+        const o = ctx.createOscillator(); o.type = 'sine'; o.frequency.value = f; o.detune.value = (i - 1.5) * 3;
+        const g = ctx.createGain(); g.gain.value = i === 0 ? 0.55 : 0.25; o.connect(g); g.connect(lp); o.start(); return o;
+      });
+      lp.connect(bus); bus.connect(dry); bus.connect(wet);
       amb = { stop() {
-        const n = ctx.currentTime; out.gain.cancelScheduledValues(n); out.gain.setValueAtTime(out.gain.value, n); out.gain.exponentialRampToValueAtTime(0.0001, n + 0.6);
-        ag.gain.setTargetAtTime(0, n, 0.05);
-        setTimeout(() => { oscs.forEach(o => o.stop()); lfo.stop(); src.stop(); }, 700);
+        const n = ctx.currentTime; bus.gain.cancelScheduledValues(n); bus.gain.setValueAtTime(bus.gain.value, n); bus.gain.exponentialRampToValueAtTime(0.0001, n + 1.2);
+        setTimeout(() => { oscs.forEach(o => o.stop()); lfo.stop(); }, 1300);
       } };
     }
     return {
       get on() { return on; },
-      enable(first) {
+      enable() {
         if (!init()) return false;
         unlockMedia();
         if (ctx.state !== 'running') ctx.resume();
-        on = true; startBeds();
-        [659.25, 880, 1318.5].forEach((f, i) => tone(f, { peak: first ? 0.03 : 0.035, rel: 1.3, delay: i * 0.1 }));
+        on = true; startAmbient();
+        [554.37, 659.25, 880].forEach((f, i) => bell(f, { peak: 0.045, decay: 2.2, delay: i * 0.16 }));
         return true;
       },
-      disable() { on = false; if (amb) { amb.stop(); amb = null; air = null; } },
+      disable() { on = false; if (amb) { amb.stop(); amb = null; } },
       resume() { if (ctx && ctx.state !== 'running') ctx.resume(); },
-      hover() { if (!on) return; const n = performance.now(); if (n - lastHover < 70) return; lastHover = n; tone(1760, { peak: 0.016, rel: 0.09, to: 1320 }); },
-      click() { if (!on) return; lastTap = performance.now(); tone(392, { type: 'triangle', peak: 0.06, rel: 0.22, to: 196 }); noise({ peak: 0.018, a: 0.003, rel: 0.05, type: 'highpass', f1: 3000, f2: 2500 }); },
-      tap() { if (!on) return; const n = performance.now(); if (n - lastTap < 80) return; lastTap = n; tone(880, { peak: 0.022, rel: 0.16, to: 660 }); },
-      whoosh() { if (!on) return; noise({ peak: 0.05, a: 0.15, rel: 0.55, f1: 300, f2: 2200, q: 0.9 }); },
-      chime(i = 0) { if (!on) return; const s = [523.25, 587.33, 659.25, 783.99, 880, 1046.5, 1174.66]; const f = s[i % s.length]; tone(f, { peak: 0.026, rel: 1.1 }); tone(f * 2, { peak: 0.007, rel: 0.8 }); },
-      scroll(speed) { if (!on || !air) return; const t = ctx.currentTime; air.gain.setTargetAtTime(Math.min(0.03, speed * 0.00003), t, 0.08); air.filter.setTargetAtTime(700 + Math.min(1600, speed * 2), t, 0.1); },
-      scrollStop() { if (!on || !air) return; air.gain.setTargetAtTime(0, ctx.currentTime, 0.25); }
+      // barely-there touch when hovering links and buttons (desktop only)
+      hover() { if (!on) return; const n = performance.now(); if (n - lastHover < 120) return; lastHover = n; bell(1760, { peak: 0.008, decay: 0.35, bright: 0 }); },
+      // a soft note on buttons and links
+      click() { if (!on) return; const n = performance.now(); if (n - lastClick < 90) return; lastClick = n; bell(SCALE[(Math.random() * 5) | 0], { peak: 0.05, decay: 1.1 }); },
+      // gentle two-note phrase for opening a design or going back to top
+      whoosh() { if (!on) return; bell(659.25, { peak: 0.035, decay: 1.4 }); bell(987.77, { peak: 0.025, decay: 1.6, delay: 0.09 }); },
+      // a single soft bell as each new section appears
+      chime(i = 0) { if (!on) return; bell(SCALE[i % SCALE.length], { peak: 0.03, decay: 2.4 }); }
     };
   })();
 
@@ -127,16 +128,16 @@
   function firstGesture(e) {
     if (e.target && e.target.closest && e.target.closest('.sound-btn')) return;
     if (store.get('liveeze-sound') === '0') { cleanup(); return; }
-    if (!Sound.on && Sound.enable(true)) { syncSoundUI(); cleanup(); }
+    if (!Sound.on && Sound.enable()) { syncSoundUI(); cleanup(); }
   }
   gestureEvents.forEach(ev => window.addEventListener(ev, firstGesture, true));
   document.addEventListener('visibilitychange', () => { if (!document.hidden && Sound.on) Sound.resume(); });
 
-  // Sounds for every touch or click, with a fuller tone on links and buttons
-  const interactive = 'a, button, summary, .chips label, input, textarea';
+  // A soft note when links and buttons are pressed
+  const interactive = 'a, button, summary, .chips label';
   document.addEventListener('pointerdown', e => {
     if (e.target.closest('.sound-btn')) return;
-    if (e.target.closest(interactive)) Sound.click(); else Sound.tap();
+    if (e.target.closest(interactive)) Sound.click();
   }, true);
   if (fine) document.addEventListener('pointerover', e => {
     const el = e.target.closest(interactive);
@@ -238,7 +239,6 @@
   const band = document.querySelector('.band'), bandMedia = document.querySelector('.band-media');
   const contact = document.querySelector('#contact');
   const pfMedia = document.querySelector('.pf-hero-media');
-  let lastY = window.scrollY, lastT = performance.now(), stopTimer = 0;
 
   function onScroll() {
     const y = window.scrollY, vh = window.innerHeight;
@@ -267,10 +267,6 @@
     sections.forEach((s, i) => { if (s && s.getBoundingClientRect().top < vh * 0.4) cur = i; });
     navLinks.forEach((a, i) => a.classList.toggle('is-current', i === cur));
 
-    const now = performance.now(), speed = Math.abs(y - lastY) / Math.max(16, now - lastT) * 1000;
-    lastY = y; lastT = now;
-    Sound.scroll(speed);
-    clearTimeout(stopTimer); stopTimer = setTimeout(() => Sound.scrollStop(), 140);
   }
   let ticking = false;
   window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { onScroll(); ticking = false; }); } }, { passive: true });
