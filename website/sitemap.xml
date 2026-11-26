@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://www.liveeze.com/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <image:image><image:loc>https://www.liveeze.com/assets/images/hero-staircase.jpg</image:loc><image:title>Curved forest-green staircase lit by a skylight</image:title></image:image>
     <image:image><image:loc>https://www.liveeze.com/assets/images/ivory-architecture.jpg</image:loc><image:title>Ivory plaster courtyard with an olive tree</image:title></image:image>
     <image:image><image:loc>https://www.liveeze.com/assets/images/natural-materials.jpg</image:loc><image:title>Travertine, green marble, oak and linen samples</image:title></image:image>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://www.liveeze.com/portfolio</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/01.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 01</image:title></image:image>
     <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/02.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 02</image:title></image:image>
     <image:image><image:loc>https://www.liveeze.com/assets/portfolio/residence/03.jpg</image:loc><image:title>Residence exterior design by LIVEEZE, 03</image:title></image:image>
@@ -119,7 +119,7 @@
   </url>
   <url>
     <loc>https://www.liveeze.com/projects/marhaba-manzil</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/01.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: From the gate</image:title></image:image>
     <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/02.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Front elevation</image:title></image:image>
     <image:image><image:loc>https://www.liveeze.com/assets/projects/marhaba-manzil/exterior/03.jpg</image:loc><image:title>Marhaba Manzil, exterior &amp; compound: Front at dusk</image:title></image:image>
@@ -201,6 +201,6 @@
   </url>
   <url>
     <loc>https://www.liveeze.com/privacy</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-26</lastmod>
   </url>
 </urlset>
